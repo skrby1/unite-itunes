@@ -1,5 +1,4 @@
 # unite-itunes
-Unite source which list up iTune's playlists &amp; tracks.
 iTunesのプレイリストやトラックをリスト表示して再生するUniteソースです。
 
 使い方
