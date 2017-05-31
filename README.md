@@ -1,5 +1,5 @@
 # unite-itunes
-iTunesのプレイリストやトラックをリスト表示して再生するUniteソースです。
+Mac用のiTunesのプレイリストやトラックをリスト表示して再生するUniteソースです。
 
 使い方
 -----
@@ -10,6 +10,7 @@ iTunesのプレイリストやトラックをリスト表示して再生するUn
     :Unite itunes:n:アーティスト名
     :Unite itunes:y:曲の年
     :Unite itunes:[<>]:最小分数-最大分数
+
 
 詳しい使い方
 -----
