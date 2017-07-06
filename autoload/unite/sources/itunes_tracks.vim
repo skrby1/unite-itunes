@@ -56,10 +56,10 @@ unlet s:uifilter
 function! s:unite_itunes.action_table.play.func(candidate)
   if s:artist
     let l:v1 = substitute(a:candidate.action__play_name, "'", "'\"'\"'", 'g')
-    let l:v1 = substitute(l:v1, "^\[s\|S\]", '')
+    let l:v1 = substitute(l:v1, "^\[s\|S\]", '', '')
   else
     let l:v1 = substitute(a:candidate.action__play_name, "'", "'\"'\"'", 'g')
-    let l:v1 = substitute(l:v1, "^\[s\|S\]", '')
+    let l:v1 = substitute(l:v1, "^\[s\|S\]", '', '')
     let l:v2 = substitute(a:candidate.action__play_plname, "'", "'\"'\"'", 'g')
     let l:v1 = l:v1 . '" of playlist "' . l:v2
   endif
