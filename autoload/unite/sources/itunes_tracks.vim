@@ -63,7 +63,8 @@ function! s:unite_itunes.action_table.play.func(candidate)
     let l:v2 = substitute(a:candidate.action__play_plname, "'", "'\"'\"'", 'g')
     let l:v1 = l:v1 . '" of playlist "' . l:v2
   endif
-    call system('osascript -e ''tell app "iTunes" to play track "'.l:v1.'"'' &')
+  call system('osascript -e ''tell app "iTunes" to play track "'.l:v1.'"'' &')
+  let l:v1 = substitute(l:v1, "'\"'\"'", "'", '')
   redraw! | echo 'Play track "'. l:v1. '"'
 endfunction
 
