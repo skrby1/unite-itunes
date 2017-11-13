@@ -1,6 +1,10 @@
 # unite-itunes
 Mac用のiTunesのプレイリストやトラックをリスト表示して再生するUniteソースです。
 
+Requirements
+-----
+- [Unite](https://github.com/Shougo/unite.vim)
+
 使い方
 -----
 
