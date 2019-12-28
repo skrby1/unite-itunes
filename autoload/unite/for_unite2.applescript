@@ -33,7 +33,7 @@ on run argv as text
           set v_s to "[s] "
         end if
       end if
-      set v_temp to v_s & name of i & tab & album of i & tab & artist of i & tab & track number of i & tab & argv
+      set v_temp to v_s & name of i & tab & album of i & tab & artist of i & tab & track number of i & tab & argv & tab & id of i
       if v_flag = 0 then
         set l_data to v_temp
         set v_flag to 1

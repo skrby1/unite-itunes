@@ -9,7 +9,7 @@ foreach(@ps_vim){
   if($_ !~ /grep -ie/){
     my @list = split(/\s+/, $_);
     $macvimPID = $list[1] if $list[-1] =~ /MacVim/;
-    $vimPID = $list[1] if $list[-1] eq "vim";
+    $vimPID = $list[1] if $list[-1] =~ /vim/;
   }
 }
 
