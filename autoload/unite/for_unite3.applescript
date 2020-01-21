@@ -1,5 +1,5 @@
 on run argv as text
-  tell application "iTunes"
+  tell application "Music"
     if not (exists playlist "Unite") then
       make playlist with properties {name:"Unite", special kind:"none"}
     else

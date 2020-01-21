@@ -34,19 +34,19 @@ call unite#define_filter(s:uifilter)
 unlet s:uifilter
 
 function! unite#sources#itunes#toggle() abort
-  call system('osascript -e ''tell app "iTunes" to playpause'' &')
+  call system('osascript -e ''tell app "Music" to playpause'' &')
 endfunction
 
 function! s:unite_itunes.action_table.play.func(candidate)
   let l:v1 = substitute(a:candidate.action__play_name, "'", "'\"'\"'", 'g')
-  call system('osascript -e ''tell app "iTunes" to play playlist "'.l:v1.'"'' &')
+  call system('osascript -e ''tell app "Music" to play playlist "'.l:v1.'"'' &')
   redraw! | echo 'Play playlist "'. l:v1. '"'
 endfunction
 
 function! s:unite_itunes.action_table.play_s.func(candidate)
-  call system('osascript -e ''tell app "iTunes" to set shuffle enabled to true''')
+  call system('osascript -e ''tell app "Music" to set shuffle enabled to true''')
   let l:v1 = substitute(a:candidate.action__play_name, "'", "'\"'\"'", 'g')
-  call system('osascript -e ''tell app "iTunes" to play playlist "'.l:v1.'"'' &')
+  call system('osascript -e ''tell app "Music" to play playlist "'.l:v1.'"'' &')
   redraw! | echo 'Play playlist "'. l:v1. '" by shuffle'
 endfunction
 
@@ -59,7 +59,7 @@ function! s:unite_itunes.hooks.on_init(args, context)
   if len(a:args) != 0
     if a:args[0] == '!'
       call unite#sources#itunes#toggle()
-    elseif a:args[0] == 'a' || a:args[0] == 'n' || a:args[0] == 'y' || a:args[0] == '>' || a:args[0] == '<'
+    elseif a:args[0] == 'a' || a:args[0] == 'n' || a:args[0] == 'y' || a:args[0] == 't' || a:args[0] == '>' || a:args[0] == '<'
       exe "Unite -buffer-name=itunes_tracks itunes_tracks:". join(a:args, ":")
     endif
   endif

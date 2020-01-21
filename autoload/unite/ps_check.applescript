@@ -1,7 +1,7 @@
 on run
-  tell application "System Events" to exists application process "iTunes"
+  tell application "System Events" to exists application process "Music"
   if result is false then
-    tell application "iTunes"
+    tell application "Music"
       set shuffle enabled to false
     end tell
     set v_shell to "perl ~/.vim/bundle/unite-itunes/autoload/unite/ps_check.pl"
@@ -30,7 +30,7 @@ on run
       activate
     end tell
   else
-    tell application "iTunes"
+    tell application "Music"
       set shuffle enabled to false
     end tell
   end if

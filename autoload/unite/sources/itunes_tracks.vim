@@ -54,16 +54,16 @@ call unite#define_filter(s:uifilter)
 unlet s:uifilter
 
 function! s:unite_itunes.action_table.play.func(candidate)
-  if s:artist
-    let l:v1 = substitute(a:candidate.action__play_name, "'", "'\"'\"'", 'g')
-    let l:v1 = substitute(l:v1, '^\[[sS]] ', '', '')
-  else
-    let l:v1 = substitute(a:candidate.action__play_name, "'", "'\"'\"'", 'g')
-    let l:v1 = substitute(l:v1, '^\[[sS]] ', '', '')
-    let l:v2 = substitute(a:candidate.action__play_plname, "'", "'\"'\"'", 'g')
+  let l:v1 = substitute(a:candidate.action__play_name, "'", "'\"'\"'", 'g')
+  let l:v1 = substitute(l:v1, '^\[[sS]] ', '', '')
+  let l:v2 = substitute(a:candidate.action__play_plname, "'", "'\"'\"'", 'g')
+  let l:v3 = a:candidate.action__play_id
+  if !s:artist
     let l:v1 = l:v1 . '" of playlist "' . l:v2
+    call system('osascript -e ''tell app "Music" to play track id '.l:v3.' of playlist "'.l:v2.'"'' &')
+  else
+    call system('osascript -e ''tell app "Music" to play track id '.l:v3.''' &')
   endif
-  call system('osascript -e ''tell app "iTunes" to play track "'.l:v1.'"'' &')
   let l:v1 = substitute(l:v1, "'\"'\"'", "'", '')
   redraw! | echo 'Play track "'. l:v1. '"'
 endfunction
@@ -71,12 +71,12 @@ endfunction
 function! s:unite_itunes.action_table.play_s.func(candidate)
   let l:v1 = substitute(a:candidate.action__play_album, "'", "'\"'\"'", 'g')
   if a:candidate.action__play_name[0:2] != '[s]'
-    call system('osascript -e ''tell app "iTunes" to set shuffle enabled to true''')
+    call system('osascript -e ''tell app "Music" to set shuffle enabled to true''')
     call system('osascript '. expand("~/.vim/bundle/unite-itunes/autoload/unite/for_unite3.applescript"). " '". l:v1. "'")
     redraw! | echo 'Play album "'. l:v1. '" by shuffle'
   else
     exe 'UniteResume itunes_tracks'
-    redraw! | echo "Sorry, Can't play shared track by album!"
+    redraw! | echo "Sorry, Can't play shared track as album!"
   endif
 endfunction
 
@@ -87,7 +87,7 @@ function! s:unite_itunes.action_table.play_a.func(candidate)
     redraw! | echo 'Play album "'. l:v1. '"'
   else
     exe 'UniteResume itunes_tracks'
-    redraw! | echo "Sorry, Can't play shared track by album!"
+    redraw! | echo "Sorry, Can't play shared track as album!"
   endif
 endfunction
 
@@ -114,7 +114,8 @@ function! s:unite_itunes.gather_candidates(args, context) abort
     \ "album":  l:v[1],
     \ "artist": l:v[2],
     \ "tkno":   l:v[3],
-    \ "argv":   l:v[4],
+    \ "id":     l:v[4],
+    \ "argv":   l:v[5],
     \ })
   endfor
   return map(copy(s:songs), '{
@@ -122,6 +123,7 @@ function! s:unite_itunes.gather_candidates(args, context) abort
   \ "source": "itunes_tracks",
   \ "action__play_name": v:val.name,
   \ "action__play_album": v:val.album,
+  \ "action__play_id": v:val.id,
   \ "action__play_plname": v:val.argv,
   \ "source__track": v:val,
   \ }')

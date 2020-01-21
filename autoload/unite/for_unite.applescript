@@ -1,6 +1,6 @@
 on run argv as text
   set l_props to {}
-  tell application "iTunes"
+  tell application "Music"
     set l_props to playlists whose special kind is none
     set v_temp to ""
     set l_data to ""
