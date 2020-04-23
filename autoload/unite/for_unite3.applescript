@@ -37,7 +37,7 @@ on run argv
     repeat with k in l_album_t
       set comment of k to (comment of k) & "Unite"
     end repeat
-    delay (2.5 + (v_plt + v_cnt) / 6.0)
+    delay (3.0 + (v_plt + v_cnt) / 6.0)
     play playlist "Unite"
   end tell
 end run
