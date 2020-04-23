@@ -1,18 +1,32 @@
-# unite-itunes
-  unite-itunes is a unite source that list up 
-  name of songs, albums and artists
-  in order to plays tracks in OSX "Music" App.
+CONTENTS					*unite-itunes-contents*
 
-Limitation
------
-  this plugin is only fot OSX Catalina.
+Contents					|unite-itunes-contents|
+Introduction					|unite-itunes-introduction|
+Limitation					|unite-itunes-limitation|
+Install						|unite-itunes-install|
+Usage						|unite-itunes-usage|
+Todo						|unite-itunes-todo|
+Bugs						|unite-itunes-bugs|
+Changelog					|unite-itunes-changelog|
 
-Requirements
------
-- [Unite](https://github.com/Shougo/unite.vim)
+======================================================================
+INTRODUCTION					*unite-itunes-introduction*
 
-Install
------
+    |unite-itunes| is a |unite| source that list up
+    name of songs, name of albums and name of artists
+    in order to plays tracks in OSX "Music" App.
+
+    This plugin can treat playlists, shaered tracks, tracks.
+    And can play shuffle in album, album, 1 track.
+
+======================================================================
+LIMITATION					*unite-itunes-limitation*
+
+    This plugin is only for OSX Catalina.
+    Because of using by AppleScript.
+
+======================================================================
+INSTALL						*unite-itunes-install*
 
 NeoBundle (write in your ~/.vimrc)
 
@@ -20,11 +34,11 @@ NeoBundle (write in your ~/.vimrc)
 
 In "Music" App
 
-    1. Make Smart Playlist named "Unite"
+    1. Make Smart Playlist named "Unite".
 
-    2. Choose [Edit Rules...] using context menu of Smart Playlist "Unite"
+    2. Choose [Edit Rules...] using context menu of Smart Playlist "Unite".
 
-    3. Set rules to [Comments] [contains] "Unite"
+    3. Set rules to [Comments] [contains] "Unite".
 
     4. Push [OK] button.
 
@@ -34,21 +48,21 @@ In your ~/.vimrc (Customize the key bindings as you like)
     function! s:unite_my_settings()
       let l:unite = unite#get_current_unite()
       if l:unite.buffer_name ==# 'itunes'
-        nnoremap <silent><buffer><expr> <C-t> unite#do_action('enter_track')
-        inoremap <silent><buffer><expr> <C-t> unite#do_action('enter_track')
-        nnoremap <silent><buffer><expr> <C-s> unite#do_action('play_s')
-        inoremap <silent><buf ui><expr> <C-s> unite#do_action('play_s')
+	nnoremap <silent><buffer><expr> <C-t> unite#do_action('enter_track')
+	inoremap <silent><buffer><expr> <C-t> unite#do_action('enter_track')
+	nnoremap <silent><buffer><expr> <C-s> unite#do_action('play_s')
+	inoremap <silent><buf ui><expr> <C-s> unite#do_action('play_s')
       elseif l:unite.buffer_name ==# 'itunes_tracks'
-        nnoremap <silent><buffer><expr> <BS>  unite#do_action('back')
-        nnoremap <silent><buffer><expr> <C-s> unite#do_action('play_s')
-        inoremap <silent><buffer><expr> <C-s> unite#do_action('play_s')
-        nnoremap <silent><buffer><expr> <C-q> unite#do_action('play_a')
-        inoremap <silent><buffer><expr> <C-q> unite#do_action('play_a')
+	nnoremap <silent><buffer><expr> <BS>  unite#do_action('back')
+	nnoremap <silent><buffer><expr> <C-s> unite#do_action('play_s')
+	inoremap <silent><buffer><expr> <C-s> unite#do_action('play_s')
+	nnoremap <silent><buffer><expr> <C-q> unite#do_action('play_a')
+	inoremap <silent><buffer><expr> <C-q> unite#do_action('play_a')
       endif
     endfunction
 
-Usage
------
+======================================================================
+USAGE						*unite-itunes-usage*
 
     :Unite -buffer-name=itunes itunes
 
@@ -106,14 +120,12 @@ Usage
 
       ex) :Unite -buffer-name=itunes itunes:t:come_to_daddy
 
-
     :Unite -buffer-name=itunes itunes:y:[YEAR_OF_RELEASE]
 
       This list up tracks whose year of release is [YEAR_OF_RELEASE].
       Behavior is same for [NAME_OF_ARTIST].
 
       ex) :Unite -buffer-name=itunes itunes:y:1978
-
 
     :Unite -buffer-name=itunes itunes:< or >:[MINIMUM_TIME]-[MAXIMUM_TIME]
 
@@ -127,10 +139,19 @@ Usage
       This example lists up 0 ~ 12 sec songs.
 
 
-Detailed usage
------
-[Please refer to this link](http://skrby1.com/?p=125)
+======================================================================
+TODO						*unite-itunes-todo*
+======================================================================
+BUGS						*unite-itunes-bugs1*
+======================================================================
+CHANGELOG					*unite-itunes-changelog*
 
-License
-----
-MIT
+0.1.0	2020-04-23
+	a little big revision. :-)
+
+	Use Smart-Playlist instead of Playlist named "Unite"
+	Some bugs fix.
+	Make this help file.
+	Improve README.md.
+======================================================================
+vim:tw=78:ts=8:ft=help:norl:noet:fen:fdl=0:

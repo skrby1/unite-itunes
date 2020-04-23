@@ -26,11 +26,15 @@ let s:artist = 0
 let s:uifilter = {'name': 'converter_my_track'}
 
 function! s:Sort1(i1, i2)
-  let t1 = str2nr(a:i1.source__track.tkno)
-  let t2 = str2nr(a:i2.source__track.tkno)
+  let id1 = a:i1.source__track.id
+  let id2 = a:i2.source__track.id
+  "let t1 = str2nr(a:i1.source__track.tkno)
+  "let t2 = str2nr(a:i2.source__track.tkno)
+  let n1 = a:i1.source__track.artist
+  let n2 = a:i2.source__track.artist
   let a1 = a:i1.source__track.album
   let a2 = a:i2.source__track.album
-  return a1 > a2 ? 1 : (a1 == a2 ? (t1 > t2 ? 1 : -1) : -1)
+  return a1 > a2 ? 1 : (a1 == a2 ? (n1 > n2 ? 1 : (n1 == n2 ? (id1 > id2 ? 1 : -1) : -1)) : -1)
 endfunction
 
 function! s:uifilter.filter(candidates, context)
@@ -70,25 +74,22 @@ endfunction
 
 function! s:unite_itunes.action_table.play_s.func(candidate)
   let l:v1 = substitute(a:candidate.action__play_album, "'", "'\"'\"'", 'g')
-  if a:candidate.action__play_name[0:2] != '[s]'
+  let l:v2 = a:candidate.action__play_artist
+  "if a:candidate.action__play_name[0:2] != '[s]'
     call system('osascript -e ''tell app "Music" to set shuffle enabled to true''')
-    call system('osascript '. expand("~/.vim/bundle/unite-itunes/autoload/unite/for_unite3.applescript"). " '". l:v1. "'")
+    call system('osascript '. expand("~/.vim/bundle/unite-itunes/autoload/unite/for_unite3.applescript"). " '". l:v1. "' '". l:v2. "'")
     redraw! | echo 'Play album "'. l:v1. '" by shuffle'
-  else
-    exe 'UniteResume itunes_tracks'
-    redraw! | echo "Sorry, Can't play shared track as album!"
-  endif
+  "else
+    "exe 'UniteResume itunes_tracks'
+    "redraw! | echo "Sorry, Can't play shared track as album!"
+  "endif
 endfunction
 
 function! s:unite_itunes.action_table.play_a.func(candidate)
   let l:v1 = substitute(a:candidate.action__play_album, "'", "'\"'\"'", 'g')
-  if a:candidate.action__play_name[0:2] != '[s]'
-    call system('osascript '. expand("~/.vim/bundle/unite-itunes/autoload/unite/for_unite3.applescript"). " '". l:v1. "'")
-    redraw! | echo 'Play album "'. l:v1. '"'
-  else
-    exe 'UniteResume itunes_tracks'
-    redraw! | echo "Sorry, Can't play shared track as album!"
-  endif
+  let l:v2 = a:candidate.action__play_artist
+  call system('osascript '. expand("~/.vim/bundle/unite-itunes/autoload/unite/for_unite3.applescript"). " '". l:v1. "' '". l:v2. "'")
+  redraw! | echo 'Play album "'. l:v1. '"'
 endfunction
 
 function! s:unite_itunes.action_table.back.func(candidate)
@@ -123,6 +124,7 @@ function! s:unite_itunes.gather_candidates(args, context) abort
   \ "source": "itunes_tracks",
   \ "action__play_name": v:val.name,
   \ "action__play_album": v:val.album,
+  \ "action__play_artist": v:val.artist,
   \ "action__play_id": v:val.id,
   \ "action__play_plname": v:val.argv,
   \ "source__track": v:val,
