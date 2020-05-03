@@ -28,6 +28,8 @@ In "Music" App
 
     4. Push [OK] button.
 
+    5. Set sort order of this smart playlist to [Track Number].
+
 In your ~/.vimrc (Customize the key bindings as you like)
 
     autocmd FileType unite call s:unite_my_settings()

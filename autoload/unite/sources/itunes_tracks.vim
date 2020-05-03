@@ -88,7 +88,8 @@ endfunction
 function! s:unite_itunes.action_table.play_a.func(candidate)
   let l:v1 = substitute(a:candidate.action__play_album, "'", "'\"'\"'", 'g')
   let l:v2 = a:candidate.action__play_artist
-  call system('osascript '. expand("~/.vim/bundle/unite-itunes/autoload/unite/for_unite3.applescript"). " '". l:v1. "' '". l:v2. "'")
+  let l:v3 = a:candidate.action__play_id
+  call system('osascript '. expand("~/.vim/bundle/unite-itunes/autoload/unite/for_unite3.applescript"). " '". l:v1. "' '". l:v2. "' '". l:v3. "'" )
   redraw! | echo 'Play album "'. l:v1. '"'
 endfunction
 

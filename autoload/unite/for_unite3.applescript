@@ -20,7 +20,11 @@ on run argv
         end repeat
       end if
     end if
-    set l_album to tracks whose (album is item 1 of argv) and (artist is item 2 of argv)
+    if (compilation of track id (item 3 of argv as integer)) is true then
+      set l_album to tracks whose (album is item 1 of argv)
+    else
+      set l_album to tracks whose (album is item 1 of argv) and (artist is item 2 of argv)
+    end if
     set l_album_t to {}
     set l_idx to {}
     repeat with i in l_album
@@ -36,8 +40,9 @@ on run argv
     --add l_album_t to playlist "Unite"
     repeat with k in l_album_t
       set comment of k to (comment of k) & "Unite"
+      delay 0.3
     end repeat
-    delay (3.0 + (v_plt + v_cnt) / 6.0)
+    delay 1.0
     play playlist "Unite"
   end tell
 end run
