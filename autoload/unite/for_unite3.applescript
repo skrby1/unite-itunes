@@ -40,9 +40,9 @@ on run argv
     --add l_album_t to playlist "Unite"
     repeat with k in l_album_t
       set comment of k to (comment of k) & "Unite"
-      delay 0.3
+      delay 0.5
     end repeat
-    delay 1.0
+    delay 1.5
     play playlist "Unite"
   end tell
 end run
