@@ -4,7 +4,7 @@ on run
     tell application "Music"
       set shuffle enabled to false
     end tell
-    set v_shell to "perl ~/.vim/bundle/unite-itunes/autoload/unite/ps_check.pl"
+    set v_shell to "perl ./ps_check.pl"
     set v_ps to do shell script v_shell
 
 (*
