@@ -72,12 +72,13 @@ function! s:unite_itunes.action_table.play.func(candidate)
   redraw! | echo 'Play track "'. l:v1. '"'
 endfunction
 
+let s:filepath = expand("<sfile>:p:h:h")
 function! s:unite_itunes.action_table.play_s.func(candidate)
   let l:v1 = substitute(a:candidate.action__play_album, "'", "'\"'\"'", 'g')
   let l:v2 = a:candidate.action__play_artist
   "if a:candidate.action__play_name[0:2] != '[s]'
   call system('osascript -e ''tell app "Music" to set shuffle enabled to true''')
-  call system('osascript '. expand("%:p:h:h"). '/for_unite3.applescript'. " '". l:v1. "' '". l:v2. "'")
+  call system('osascript '. s:filepath . '/for_unite3.applescript'. " '". l:v1. "' '". l:v2. "'")
   let l:v1 = substitute(l:v1, "'\"'\"'", "'", 'g')
   redraw! | echo 'Play album "'. l:v1. '" by shuffle'
   "else
@@ -90,7 +91,7 @@ function! s:unite_itunes.action_table.play_a.func(candidate)
   let l:v1 = substitute(a:candidate.action__play_album, "'", "'\"'\"'", 'g')
   let l:v2 = a:candidate.action__play_artist
   let l:v3 = a:candidate.action__play_id
-  call system('osascript '. expand("%:p:h:h"). '/for_unite3.applescript'. " '". l:v1. "' '". l:v2. "' '". l:v3. "'" )
+  call system('osascript '. s:filepath . '/for_unite3.applescript'. " '". l:v1. "' '". l:v2. "' '". l:v3. "'" )
   let l:v1 = substitute(l:v1, "'\"'\"'", "'", 'g')
   redraw! | echo 'Play album "'. l:v1. '"'
 endfunction
@@ -110,7 +111,7 @@ function! s:unite_itunes.gather_candidates(args, context) abort
   if len(a:args) > 1
     let s:artist = 1
   endif
-  let l:sys = "osascript ". expand("%:p:h:h"). '/for_unite2.applescript'. " '". join(a:args, "|"). "' | perl -pe 's/\r/\n/g'"
+  let l:sys = "osascript ". s:filepath . '/for_unite2.applescript'. " '". join(a:args, "|"). "' | perl -pe 's/\r/\n/g'"
   for l:playlists in split(system(l:sys), "\n")
     let l:v = split(l:playlists, "\t")
     call add(s:songs, {

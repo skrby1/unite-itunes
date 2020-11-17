@@ -54,8 +54,9 @@ function! s:unite_itunes.action_table.enter_track.func(candidate)
   exe "Unite -buffer-name=itunes_tracks itunes_tracks:". escape(a:candidate.action__play_name, ' :')
 endfunction
 
+let s:filepath = expand("<sfile>:p:h:h")
 function! s:unite_itunes.hooks.on_init(args, context)
-  call system('osascript '. expand("%:p:h:h"). '/ps_check.applescript')
+  call system('osascript '. s:filepath . '/ps_check.applescript')
   if len(a:args) != 0
     if a:args[0] == '!'
       call unite#sources#itunes#toggle()
@@ -67,7 +68,7 @@ endfunction
 
 function! s:unite_itunes.gather_candidates(args, context) abort
   let s:songs = []
-  let l:sys = 'osascript '. expand("%:p:h:h"). '/for_unite.applescript'. ' | perl -pe "s/\r/\n/g"'
+  let l:sys = 'osascript '. s:filepath . '/for_unite.applescript'. ' | perl -pe "s/\r/\n/g"'
   for l:playlists in split(system(l:sys), "\n")
   let l:v = split(l:playlists, "\t")
     call add(s:songs, {
