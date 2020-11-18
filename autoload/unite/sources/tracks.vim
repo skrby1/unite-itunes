@@ -2,7 +2,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 let s:unite_itunes = {
-  \ 'name': 'itunes_tracks',
+  \ 'name': 'tracks',
   \ 'is_listed' : 0,
   \ 'action_table' : {
   \   'play' : {
@@ -82,7 +82,7 @@ function! s:unite_itunes.action_table.play_s.func(candidate)
   let l:v1 = substitute(l:v1, "'\"'\"'", "'", 'g')
   redraw! | echo 'Play album "'. l:v1. '" by shuffle'
   "else
-    "exe 'UniteResume itunes_tracks'
+    "exe 'UniteResume tracks'
     "redraw! | echo "Sorry, Can't play shared track as album!"
   "endif
 endfunction
@@ -125,7 +125,7 @@ function! s:unite_itunes.gather_candidates(args, context) abort
   endfor
   return map(copy(s:songs), '{
   \ "word": v:val.name,
-  \ "source": "itunes_tracks",
+  \ "source": "tracks",
   \ "action__play_name": v:val.name,
   \ "action__play_album": v:val.album,
   \ "action__play_artist": v:val.artist,
@@ -135,9 +135,18 @@ function! s:unite_itunes.gather_candidates(args, context) abort
   \ }')
 endfunction
 
-call unite#custom_source('itunes_tracks', 'converters', 'converter_my_track')
+call unite#custom_source('tracks', 'converters', 'converter_my_track')
 
-function! unite#sources#itunes_tracks#define()
+call denite#custom#action("source/tracks", "play_s", s:unite_itunes.action_table.play_s)
+call denite#custom#action("source/tracks", "play_a", s:unite_itunes.action_table.play_a)
+call denite#custom#action("source/tracks", "back", s:unite_itunes.action_table.back)
+function s:denite_filter_my_sesttings() abort
+  nnoremap <silent><buffer><expr> <C-s> denite#do_map('do_action', 'play_s')
+  nnoremap <silent><buffer><expr> <C-q> denite#do_map('do_action', 'play_a')
+  nnoremap <silent><buffer><expr> <BS> denite#do_map('do_action', 'back')
+endfunction
+
+function! unite#sources#tracks#define()
   return s:unite_itunes
 endfunction
 
