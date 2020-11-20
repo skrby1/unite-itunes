@@ -1,15 +1,16 @@
 # unite-itunes
-  unite-itunes is a unite source that list up 
-  name of songs, albums and artists
+  unite-itunes is a unite (or denite) source  
+  that list up name of songs, titles, albums and artists   
+  or release years and playing time  
   in order to plays tracks in OSX "Music" App.
 
 Limitation
 -----
-  this plugin is only fot OSX Catalina.
+  this plugin is only for above OSX Catalina.(10.15+)
 
 Requirements
 -----
-- [Unite](https://github.com/Shougo/unite.vim)
+- [Unite](https://github.com/Shougo/unite.vim) or [denite]('https://github.com/Shougo/denite.nvim')
 
 Install
 -----
@@ -18,19 +19,26 @@ NeoBundle (write in your ~/.vimrc)
 
     NeoBundle "skrby1/unite-itunes"
 
+dein
+
+    call dein#add('skrby1/unite-itunes')
+
+
 In "Music" App
 
-    1. Make Smart Playlist named "Unite"
+    1. Make Smart Playlist named "Unite" (or "Vim" for denite use)
 
-    2. Choose [Edit Rules...] using context menu of Smart Playlist "Unite"
+    2. Choose [Edit Rules...] using context menu of Smart Playlist "Unite" (or "Vim" for denite use)
 
-    3. Set rules to [Comments] [contains] "Unite"
+    3. Set rules to [Comments] [contains] "Unite" (or "Vim" for denite use)
 
     4. Push [OK] button.
 
     5. Set sort order of this smart playlist to [Track Number].
 
 In your ~/.vimrc (Customize the key bindings as you like)
+
+--For Unite
 
     autocmd FileType unite call s:unite_my_settings()
     function! s:unite_my_settings()
@@ -49,8 +57,31 @@ In your ~/.vimrc (Customize the key bindings as you like)
       endif
     endfunction
 
+--For denite
+
+    autocmd FileType denite call s:denite_my_settings()
+    function! s:denite_my_settings() abort
+      nnoremap <silent><buffer><expr> <CR>
+      \ denite#do_map('do_action')
+      if b:denite.buffer_name == 'music'
+        nnoremap <silent><buffer><expr> s
+        \ denite#do_map('do_action', 'play_s')
+        nnoremap <silent><buffer><expr> t
+        \ denite#do_map('do_action', 'enter_track')
+      elseif b:denite.buffer_name == 'tracks'
+        nnoremap <silent><buffer><expr> s
+        \ denite#do_map('do_action', 'play_s')
+        nnoremap <silent><buffer><expr> a
+        \ denite#do_map('do_action', 'play_a')
+        nnoremap <silent><buffer><expr> <BS>
+        \ denite#do_map('do_action', 'back')
+      endif
+    endfunction
+
 Usage
 -----
+
+--For Unite
 
     :Unite -buffer-name=itunes itunes
 
@@ -58,7 +89,7 @@ Usage
       select one and press [return] or choose action [play],
       Then play a playlist selected by you.
 
-      If you choose action [enter_track] ora press keybind attached
+      If you choose action [enter_track] or press keybind attached
       [enter_track] that you wrote in .vimrc, Then another itunes_tracks list
       that contained tracks in a playlist selected by you is displayed.
 
@@ -74,7 +105,7 @@ Usage
 
     :Unite -buffer-name=itunes itunes:n:[NAME_OF_ARTIST]
 
-      This list up tracks whose artist name is [NAME_OF_ARTIST].
+      This list up tracks whose artist name contains [NAME_OF_ARTIST].
       Select one and press [return] or choose action [play],
       Then it play a track.
 
@@ -84,9 +115,9 @@ Usage
 
       If you choose action [play_s] ot press keybind attached [play_s] that
       you wrote in ~/.vimrc,
-      Then it plays the a;bum that contains track selected by you in shuffle.
+      Then it plays the album that contains track selected by you in shuffle.
 
-      If you want insert [Space] in [NAMW_OF_ARTIST], Then you can use [_](under bar).
+      If you want insert [Space] in [NAMW_OF_ARTIST], You can use [_](under bar).
       Upper case or Lower case is ignored.
       [NAME_OF_ARTIST] does not have to enter complete words.
 
@@ -95,7 +126,7 @@ Usage
 
     :Unite -buffer-name=itunes itunes:a:[NAME_OF_ALBUM]
 
-      This list up tracks whose album name is [NAME_OF_ALBUM].
+      This list up tracks whose album name contains [NAME_OF_ALBUM].
       Behavior is same for [NAME_OF_ARTIST].
 
       ex) :Unite -buffer-name=itunes itunes:a:selected_ambient
@@ -103,7 +134,7 @@ Usage
 
     :Unite -buffer-name=itunes itunes:t:[TITLE_OF_SING]
 
-      This list up tracks whose title of song is [TITLE_OF_SONG].
+      This list up tracks whose title of song contains [TITLE_OF_SONG].
       Behavior is same for [NAME_OF_ARTIST].
 
       ex) :Unite -buffer-name=itunes itunes:t:come_to_daddy
@@ -127,6 +158,20 @@ Usage
       This example lists up 90 ~ 180 sec songs.
       ex2) :Unite -buffer-name=itunes itunes:>:0-0.2
       This example lists up 0 ~ 12 sec songs.
+
+
+--For denite  
+source name changed from "itunes" to "music".  
+Denite option "-no-empty" is required.  
+Behavior is same for Unite source.  
+
+    :Denite -no-empty -buffer-name=music music
+    :Denite -no-empty -buffer-name=music music:!
+    :Denite -no-empty -buffer-name=music music:n:[NAME_OF_ARTIST]
+    :Denite -no-empty -buffer-name=music music:a:[NAME_OF_ALBUM]
+    :Denite -no-empty -buffer-name=music music:t:[TITLE_OF_SONG]
+    :Denite -no-empty -buffer-name=music music:y:[YEAR_OF_RELEASE]
+    :Denite -no-empty -buffer-name=music music:< or >:[MINIMUM_TIME]-[MAXIMUM_TIME]
 
 
 Detailed usage

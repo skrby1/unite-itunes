@@ -49,13 +49,13 @@ function! s:unite_itunes.action_table.play_s.func(candidate)
   call system('osascript -e ''tell app "Music" to play playlist "'.l:v1.'"'' &')
   redraw! | echo 'Play playlist "'. l:v1. '" by shuffle'
 endfunction
-function! s:play_s(context)
-  echo a:context
+"function! s:play_s(context)
+"  echo a:context
   "call system('osascript -e ''tell app "Music" to set shuffle enabled to true''')
   "let l:v1 = substitute(a:candidate.action__play_name, "'", "'\"'\"'", 'g')
   "call system('osascript -e ''tell app "Music" to play playlist "'.l:v1.'"'' &')
   "redraw! | echo 'Play playlist "'. l:v1. '" by shuffle'
-endfunction
+"endfunction
 
 function! s:unite_itunes.action_table.enter_track.func(candidate)
   exe "Unite -buffer-name=tracks tracks:". escape(a:candidate.action__play_name, ' :')

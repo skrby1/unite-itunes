@@ -76,9 +76,10 @@ let s:filepath = expand("<sfile>:p:h:h")
 function! s:unite_itunes.action_table.play_s.func(candidate)
   let l:v1 = substitute(a:candidate.action__play_album, "'", "'\"'\"'", 'g')
   let l:v2 = a:candidate.action__play_artist
+  let l:v3 = a:candidate.action__play_id
   "if a:candidate.action__play_name[0:2] != '[s]'
   call system('osascript -e ''tell app "Music" to set shuffle enabled to true''')
-  call system('osascript '. s:filepath . '/for_unite3.applescript'. " '". l:v1. "' '". l:v2. "'")
+  call system('osascript '. s:filepath . '/for_unite3.applescript'. " '". l:v1. "' '". l:v2. "' '". l:v3. "'")
   let l:v1 = substitute(l:v1, "'\"'\"'", "'", 'g')
   redraw! | echo 'Play album "'. l:v1. '" by shuffle'
   "else
@@ -91,7 +92,7 @@ function! s:unite_itunes.action_table.play_a.func(candidate)
   let l:v1 = substitute(a:candidate.action__play_album, "'", "'\"'\"'", 'g')
   let l:v2 = a:candidate.action__play_artist
   let l:v3 = a:candidate.action__play_id
-  call system('osascript '. s:filepath . '/for_unite3.applescript'. " '". l:v1. "' '". l:v2. "' '". l:v3. "'" )
+  call system('osascript '. s:filepath . '/for_unite3.applescript'. " '". l:v1. "' '". l:v2. "' '". l:v3. "'")
   let l:v1 = substitute(l:v1, "'\"'\"'", "'", 'g')
   redraw! | echo 'Play album "'. l:v1. '"'
 endfunction
@@ -136,15 +137,6 @@ function! s:unite_itunes.gather_candidates(args, context) abort
 endfunction
 
 call unite#custom_source('tracks', 'converters', 'converter_my_track')
-
-call denite#custom#action("source/tracks", "play_s", s:unite_itunes.action_table.play_s)
-call denite#custom#action("source/tracks", "play_a", s:unite_itunes.action_table.play_a)
-call denite#custom#action("source/tracks", "back", s:unite_itunes.action_table.back)
-function s:denite_filter_my_sesttings() abort
-  nnoremap <silent><buffer><expr> <C-s> denite#do_map('do_action', 'play_s')
-  nnoremap <silent><buffer><expr> <C-q> denite#do_map('do_action', 'play_a')
-  nnoremap <silent><buffer><expr> <BS> denite#do_map('do_action', 'back')
-endfunction
 
 function! unite#sources#tracks#define()
   return s:unite_itunes
