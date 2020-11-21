@@ -14,7 +14,7 @@ class Kind(Base):
 
     def action_play(self, context) -> None:
         target = context['targets'][0]
-        name = target['word'].replace('[s] ', '').replace('[S] ', '')
+        name = target['word'].replace('[s] ', '').replace('[S] ', '').replace('[c] ', '')
         cmd_s = 'osascript -e \'tell app "Music" to set shuffle enabled to false\''
 
         if target['plflag']:
@@ -68,4 +68,4 @@ class Kind(Base):
 
     def action_back(self, context) -> None:
         if context['targets'][0]['plflag']:
-            self.vim.command('Denite -buffer-name=music music')
+            self.vim.command('Denite -no-empty -buffer-name=music music')

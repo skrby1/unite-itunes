@@ -19,7 +19,7 @@ class Source(Base):
 
         self.name = 'tracks'
         self.kind = 'tracks'
-        self.sorters = ['sorter/tracks']
+        self.sorters = ['sorter/albums']
         self.is_public_context = True
 
     def gather_candidates(self, context):
@@ -44,6 +44,7 @@ class Source(Base):
 
         winw = int(self.vim.funcs.winwidth(0) / 3)
         candidates = []
+        value = []
         for entry in plists:
             value = entry.split('\t')
             if value[0]:
@@ -53,8 +54,10 @@ class Source(Base):
                 candidate['artist'] = value[2]
                 candidate['tkno'] = value[3]
                 candidate['id'] = value[4]
-                candidate['plflag'] = plflag
                 candidate['plname'] = value[5]
+                candidate['ptime'] = value[6]
+                candidate['sartist'] = value[7]
+                candidate['plflag'] = plflag
                 moji1 = value[0][:int(winw * 1.27) - int(geteaw_count(value[0]))]
                 moji2 = value[1][:int(winw * 1.13) - int(geteaw_count(value[1]) * 0.9)]
                 moji3 = value[2][:int(winw * 0.6)]
@@ -66,5 +69,12 @@ class Source(Base):
             else:
                 self.vim.command('redraw! | echo \'nothing found!!\'')
                 return []
+
+        if value[8] == "playlist":
+            self.sorters = ['sorter/playlist']
+        elif value[8] == 'title' or value[8] == 'year':
+            self.sorters = ['sorter/artists']
+        elif value[8] == 'time':
+            self.sorters = ['sorter/times']
 
         return candidates

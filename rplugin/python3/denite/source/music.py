@@ -21,6 +21,7 @@ class Source(Base):
 
         self.name = 'music'
         self.kind = 'music'
+        self.sorters = ['sorter/playlist']
 
     def on_init(self, context):
         filepath = shlex.quote(os.path.normpath(os.path.join(os.path.dirname(__file__),
