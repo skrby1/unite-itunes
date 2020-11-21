@@ -14,7 +14,7 @@ class Kind(Base):
 
     def action_play(self, context) -> None:
         target = context['targets'][0]
-        name = target['word'].replace('[s]', '').replace('[S]', '')
+        name = target['word'].replace('[s] ', '').replace('[S] ', '')
         cmd_s = 'osascript -e \'tell app "Music" to set shuffle enabled to false\''
 
         if target['plflag']:
