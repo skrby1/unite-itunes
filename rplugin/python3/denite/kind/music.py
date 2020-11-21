@@ -38,7 +38,7 @@ class Kind(Base):
             self.error_message(context, err_msg)
 
     def action_enter_track(self, context) -> None:
-        self.vim.command('Denite -no-empty -buffer-name=tracks tracks:' + context['targets'][0]['word'])
+        self.vim.command('Denite -no-empty -buffer-name=tracks tracks:' + context['targets'][0]['word'].replace(' ', '\ ').replace(':', '\:'))
         #self.sources_refine(context)
 
 #    def sources_refine(self, context) -> None:
