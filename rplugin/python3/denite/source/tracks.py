@@ -20,6 +20,7 @@ class Source(Base):
         self.name = 'tracks'
         self.kind = 'tracks'
         self.sorters = ['sorter/albums']
+        self.matchers = ['matcher/regexp']
         self.is_public_context = True
 
     def gather_candidates(self, context):
@@ -49,7 +50,8 @@ class Source(Base):
             value = entry.split('\t')
             if value[0]:
                 candidate = {}
-                candidate['word'] = value[0]
+                candidate['word'] = value[0] + ' ' + value[1] + ' ' + value[2]
+                candidate['name'] = value[0]
                 candidate['album'] = value[1]
                 candidate['artist'] = value[2]
                 candidate['tkno'] = value[3]

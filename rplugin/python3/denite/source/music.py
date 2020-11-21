@@ -22,6 +22,7 @@ class Source(Base):
         self.name = 'music'
         self.kind = 'music'
         self.sorters = ['sorter/playlist']
+        self.matchers = ['matcher/regexp']
 
     def on_init(self, context):
         filepath = shlex.quote(os.path.normpath(os.path.join(os.path.dirname(__file__),
@@ -65,6 +66,7 @@ class Source(Base):
                 except CalledProcessError as e:
                     err_msg = e.stderr.splitlines()
                     self.error_message(context, err_msg)
+                self.vim.command('redraw!')
                 return []
             elif act == 'a' or act == 'n' or act == 'y' or act == 't' or act == '>' or act == '<':
                 tracks_args = 'Denite -no-empty -buffer-name=tracks tracks:' \

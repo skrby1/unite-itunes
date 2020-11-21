@@ -40,7 +40,7 @@ on run argv
     --add l_album_t to playlist "Vim"
     repeat with k in l_album_t
       set comment of k to (comment of k) & "Vim"
-      delay 0.5
+      delay 0.6
     end repeat
     delay 1.5
     play playlist "Vim"
