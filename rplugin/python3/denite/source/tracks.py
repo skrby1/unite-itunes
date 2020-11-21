@@ -5,7 +5,7 @@ import unicodedata
 from subprocess import CalledProcessError, check_output, run, PIPE
 from denite.base.source import Base
 
-def geteaw_count(text):
+def get_eaw_count(text):
     count = 0
     for c in text:
         if unicodedata.east_asian_width(c) in 'FWA':
@@ -21,6 +21,7 @@ class Source(Base):
         self.kind = 'tracks'
         self.sorters = ['sorter/albums']
         self.matchers = ['matcher/regexp']
+        self.vars = {'winw': int(self.vim.funcs.winwidth(0) / 3)}
         self.is_public_context = True
 
     def gather_candidates(self, context):
@@ -43,7 +44,6 @@ class Source(Base):
             self.error_message(context, err_msg)
             return []
 
-        winw = int(self.vim.funcs.winwidth(0) / 3)
         candidates = []
         value = []
         for entry in plists:
@@ -60,13 +60,11 @@ class Source(Base):
                 candidate['ptime'] = value[6]
                 candidate['sartist'] = value[7]
                 candidate['plflag'] = plflag
-                moji1 = value[0][:int(winw * 1.27) - int(geteaw_count(value[0]))]
-                moji2 = value[1][:int(winw * 1.13) - int(geteaw_count(value[1]) * 0.9)]
-                moji3 = value[2][:int(winw * 0.6)]
-                fmt = '{:<' + str(int(winw * 1.27) - int(geteaw_count(value[0]))) \
-                + '} {:<' + str(int(winw * 1.13) - int(geteaw_count(value[1]))) \
-                + '} {:<' + str(int(winw * 0.6)) + '}'
-                candidate['abbr'] = fmt.format(moji1,moji2,moji3)
+                moji1 = self.adjust_str(value[0], 1.27)
+                moji2 = self.adjust_str(value[1], 1.13)
+                moji3 = self.adjust_str(value[2], 0.6)
+                fmt = moji1[1] + moji2[1] + moji3[1][:-1]
+                candidate['abbr'] = fmt.format(moji1[0],moji2[0],moji3[0])
                 candidates.append(candidate)
             else:
                 self.vim.command('redraw! | echo \'nothing found!!\'')
@@ -80,3 +78,11 @@ class Source(Base):
             self.sorters = ['sorter/times']
 
         return candidates
+
+    def adjust_str(self, text: str, size: float):
+            while (len(text.encode('utf-8')) - get_eaw_count(text))\
+                    >= int(self.vars['winw'] * size):
+                text = text[:-1]
+            fmt = '{:<' + str(int(self.vars['winw'] * size)
+                    - (len(text.encode('utf-8')) - len(text) - get_eaw_count(text))) + '} '
+            return [text, fmt]
