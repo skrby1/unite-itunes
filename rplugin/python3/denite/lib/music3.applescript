@@ -32,7 +32,7 @@ on run argv
     if (compilation of track id (item 3 of argv as integer)) is true then
       set l_album to tracks whose (album is item 1 of argv)
     else
-      set l_album to tracks whose (album is item 1 of argv) and (artist is item 2 of argv)
+      set l_album to tracks whose (album is item 1 of argv) and (artist contains item 2 of argv)
     end if
     set l_album_t to {}
     set l_idx to {}
