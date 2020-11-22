@@ -8,15 +8,18 @@ on run argv as text
       set v_mode to "playlist"
     else if 1st character of argv is "n"
       set v_sw to setSW(argv) of me
-      set l_props to tracks whose (artist contains v_sw or album artist contains v_sw)
+      --set l_props to tracks whose (artist contains v_sw or album artist contains v_sw)
+      set l_props to search playlist 1 for v_sw only artists
       set v_mode to "name"
     else if 1st character of argv is "a"
       set v_sw to setSW(argv) of me
-      set l_props to tracks whose album contains v_sw
+      --set l_props to tracks whose album contains v_sw
+      set l_props to search playlist 1 for v_sw only albums
       set v_mode to "album"
     else if 1st character of argv is "t"
       set v_sw to setSW(argv) of me
-      set l_props to tracks whose name contains v_sw
+      --set l_props to tracks whose name contains v_sw
+      set l_props to search playlist 1 for v_sw only names
       set v_mode to "title"
     else if 1st character of argv is "y"
       set v_sw to setSW(argv) of me
