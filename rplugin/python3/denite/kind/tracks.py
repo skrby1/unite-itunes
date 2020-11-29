@@ -29,7 +29,7 @@ class Kind(Base):
         except CalledProcessError as e:
             err_msg = e.stderr.splitlines()
             self.error_message(context, err_msg)
-        self.vim.command('redraw! | echo \'Play track "' + name + '"\'')
+        self.vim.command('redraw! | echo \'Play track "\' . "' + name + '" . \'"\'')
 
     def action_play_s(self, context) -> None:
         filepath = shlex.quote(os.path.normpath(os.path.join(os.path.dirname(__file__),
