@@ -25,7 +25,7 @@ on run argv
           set v_words to comment of track (v_plt - h) of v_it
           set v_comment to do shell script "echo '" & v_words & "' | perl -pe 's/Vim//'"
           set (comment of track (v_plt - h) of v_it) to v_comment
-          delay 0.12
+          delay 0.15
         end repeat
       end if
     end if
@@ -49,9 +49,10 @@ on run argv
     --add l_album_t to playlist "Vim-test"
     repeat with k in l_album_t
       set comment of k to (comment of k) & "Vim"
-      delay 0.33
+      delay 0.30
     end repeat
-    delay 2.3
+    delay 2.5
+    reveal track 1 of playlist "Vim"
     play playlist "Vim"
   end tell
 end run

@@ -23,10 +23,10 @@ class Source(Base):
         self.matchers = ['matcher/regexp']
         self.vars = {'winw': int(self.vim.funcs.winwidth(0) / 3)}
         self.is_public_context = True
+        self.filepath = shlex.quote(os.path.normpath(os.path.join(os.path.dirname(__file__),
+                        '../lib/music2.applescript')))
 
     def gather_candidates(self, context):
-        filepath = shlex.quote(os.path.normpath(os.path.join(os.path.dirname(__file__),
-            '../lib/music2.applescript')))
         if len(context['args']) > 1:
             argv = '|'.join(list(context['args']))
             plflag = 0
@@ -35,8 +35,8 @@ class Source(Base):
             plflag = 1
 
         try:
-            p = run('osascript ' + filepath + ' \'' + argv
-                    + '\' | perl -pe \'s/\r/\n/g\'',
+            p = run('osascript ' + self.filepath + ' "' + argv
+                    + '" | perl -pe \'s/\r/\n/g\'',
                     shell=True, stdout=PIPE, stderr=PIPE, text=True)
             plists = p.stdout.splitlines()
         except CalledProcessError as e:
