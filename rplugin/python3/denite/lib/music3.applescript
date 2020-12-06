@@ -1,6 +1,7 @@
 on run argv
   tell application "Music"
     stop
+    set v_plt to 0
     (*
     if not (exists user playlist "Vim-test") then
       make user playlist with properties {name:"Vim-test"}
@@ -25,7 +26,7 @@ on run argv
           set v_words to comment of track (v_plt - h) of v_it
           set v_comment to do shell script "echo '" & v_words & "' | perl -pe 's/Vim//'"
           set (comment of track (v_plt - h) of v_it) to v_comment
-          delay 0.15
+          delay 0.13
         end repeat
       end if
     end if
@@ -49,9 +50,9 @@ on run argv
     --add l_album_t to playlist "Vim-test"
     repeat with k in l_album_t
       set comment of k to (comment of k) & "Vim"
-      delay 0.30
+      delay 0.3
     end repeat
-    delay 2.5
+    delay (v_plt * 0.13) + ((count items of l_album_t) * 0.3 ) + 0.2
     reveal track 1 of playlist "Vim"
     play playlist "Vim"
   end tell
