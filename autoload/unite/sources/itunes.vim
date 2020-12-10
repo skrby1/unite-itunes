@@ -22,10 +22,10 @@ let s:songs = []
 let s:uifilter = {'name': 'convert_my_track'}
 
 function! s:uifilter.filter(candidates, context)
-  let format = "%*S - %-9s"
+  let format = "%-*S %9s"
   for candidate in a:candidates
     let pl = candidate.source__pl
-    let candidate.word = printf(format, -1 * (float2nr(winwidth(0) * 0.8)), pl.name, pl.dur)
+    let candidate.word = printf(format, (float2nr(winwidth(0) * 0.86)), pl.name, pl.dur)
   endfor
   return a:candidates
 endfunction
@@ -92,16 +92,6 @@ function! s:unite_itunes.gather_candidates(args, context) abort
 endfunction
 
 call unite#custom_source('itunes', 'converters', 'convert_my_track')
-
-"autocmd FileType denite call s:itunes_my_settings()
-"call denite#custom#action("source/unite", "play_s", function('s:play_s'))
-"call denite#custom#action("source/unite", "enter_track", function('s:enter_track'))
-"function! s:itunes_my_settings() abort
-  "if denite#get_status('buffer_name') ==# 'itunes'
-"    nnoremap <silent><buffer><expr> s denite#do_map('do_action', 'play_s')
-    "nnoremap <silent><buffer><expr> t denite#do_map('do_action', 'enter_track')
-  "endif
-"endfunction
 
 function! unite#sources#itunes#define()
   return s:unite_itunes

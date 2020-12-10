@@ -6,13 +6,16 @@ on run argv as text
       set l_props to tracks of playlist argv
     else if 1st character of argv is "n"
       set v_sw to setSW(argv) of me
-      set l_props to tracks whose artist contains v_sw
+      --set l_props to tracks whose (artist contains v_sw or album artist contains v_sw)
+      set l_props to search playlist 1 for v_sw only artists
     else if 1st character of argv is "a"
       set v_sw to setSW(argv) of me
-      set l_props to tracks whose album contains v_sw
+      --set l_props to tracks whose album contains v_sw
+      set l_props to search playlist 1 for v_sw only albums
     else if 1st character of argv is "t"
       set v_sw to setSW(argv) of me
-      set l_props to tracks whose name contains v_sw
+      --set l_props to tracks whose name contains v_sw
+      set l_props to search playlist 1 for v_sw only names
     else if 1st character of argv is "y"
       set v_sw to setSW(argv) of me
       set l_props to tracks whose year = v_sw as integer and media kind of it is song
@@ -22,9 +25,10 @@ on run argv as text
       set AppleScript's text item delimiters to "-"
       set l_t to text items of v_sw
       set AppleScript's text item delimiters to v_td
-      set l_props to tracks whose duration >= (item 1 of l_t as number) * 60 and duration of it <= (item 2 of l_t as number) * 60 and media kind of it is song
-    end if
+      set l_props to tracks whose duration >= (item 1 of l_t as number) * 60.0 and duration of it <= (item 2 of l_t as number) * 60.0 and media kind of it is song
+   end if
     set v_temp to ""
+    set v_sartist to ""
     set l_data to ""
     set v_flag to 0
     repeat with i in l_props
@@ -36,7 +40,17 @@ on run argv as text
           set v_s to "[s] "
         end if
       end if
-      set v_temp to v_s & name of i & tab & album of i & tab & artist of i & tab & track number of i & tab & id of i & tab & argv
+      if compilation of i then
+        set v_s to v_s & "[c] "
+        if album artist of i is not "" then
+          set v_sartist to album artist of i
+        else
+          set v_sartist to artist of i
+        end if
+      else
+        set v_sartist to artist of i
+      end if
+      set v_temp to v_s & name of i & tab & album of i & tab & artist of i & tab & track number of i & tab & id of i & tab & argv & tab & v_sartist
       if v_flag = 0 then
         set l_data to v_temp
         set v_flag to 1

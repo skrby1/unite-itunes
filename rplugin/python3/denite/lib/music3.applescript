@@ -50,9 +50,9 @@ on run argv
     --add l_album_t to playlist "Vim-test"
     repeat with k in l_album_t
       set comment of k to (comment of k) & "Vim"
-      delay 0.3
+      delay 0.28
     end repeat
-    delay (v_plt * 0.13) + ((count items of l_album_t) * 0.3 ) + 0.2
+    delay (v_plt * 0.13) + ((count items of l_album_t) * 0.28) + 0.25
     reveal track 1 of playlist "Vim"
     play playlist "Vim"
   end tell

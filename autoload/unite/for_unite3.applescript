@@ -1,29 +1,28 @@
 on run argv
   tell application "Music"
     stop
+    set v_plt to 0
     if not (exists playlist "Unite") then
       --make playlist with properties {name:"Unite", special kind:"none"}
       activate
       display dialog "Make smartplaylist named 'Unite'" & return & return & "Rule is..." & return & "[Comments] [contains] [Unite]"
     else
       --delete tracks of playlist "Unite"
-      set v_plt to (count tracks of playlist "Unite")
-      if exists tracks of playlist "Unite" then
+      set v_it to playlist "Unite"
+      set v_plt to (count tracks of v_it)
+      if exists tracks of v_it then
         repeat with h from 0 to (v_plt - 1)
-          set l_words to characters of comment of track (v_plt - h) of playlist "Unite"
-          set v_cnt to (count items of l_words)
-          set l_comment to {}
-          repeat with i from 1 to v_cnt - 5
-            set l_comment to l_comment & item i of l_words
-          end repeat
-          set (comment of track (v_plt - h) of playlist "Unite") to l_comment as string
+          set v_words to comment of track (v_plt - h) of v_it
+          set v_comment to do shell script "echo '" & v_words & "' | perl -pe 's/Unite//'"
+          set (comment of track (v_plt - h) of v_it) to v_comment
+          delay 0.13
         end repeat
       end if
     end if
     if (compilation of track id (item 3 of argv as integer)) is true then
       set l_album to tracks whose (album is item 1 of argv)
     else
-      set l_album to tracks whose (album is item 1 of argv) and (artist is item 2 of argv)
+      set l_album to tracks whose (album is item 1 of argv) and (artist contains item 2 of argv)
     end if
     set l_album_t to {}
     set l_idx to {}
@@ -40,9 +39,10 @@ on run argv
     --add l_album_t to playlist "Unite"
     repeat with k in l_album_t
       set comment of k to (comment of k) & "Unite"
-      delay 0.5
+      delay 0.3
     end repeat
-    delay 1.5
+    delay (v_plt * 0.13) + ((count items of l_album_t) * 0.28) + 0.25
+    reveal track 1 of playlist "Unite"
     play playlist "Unite"
   end tell
 end run
