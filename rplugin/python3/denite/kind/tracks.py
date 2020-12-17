@@ -14,7 +14,7 @@ class Kind(Base):
 
     def action_play(self, context) -> None:
         target = context['targets'][0]
-        name = target['name'].replace('[s] ', '').replace('[S] ', '').replace('[c] ', '')
+        name = target['name'].replace('[s] ', '').replace('[S] ', '').replace('[c] ', '').replace('"', '\\"')
         cmd_s = 'osascript -e \'tell app "Music" to set shuffle enabled to false\''
 
         if target['plflag']:
@@ -35,7 +35,7 @@ class Kind(Base):
         filepath = shlex.quote(os.path.normpath(os.path.join(os.path.dirname(__file__),
             '../lib/music3.applescript')))
         target = context['targets'][0]
-        album = target['album']
+        album = target['album'].replace('"', '\\"')
         artist = target['artist']
         cmd_s = 'osascript -e \'tell app "Music" to set shuffle enabled to true\''
         cmd = 'osascript ' + filepath + " \"" + album + "\" \"" + artist + "\" '" + target['id'] + "'"
@@ -46,13 +46,13 @@ class Kind(Base):
         except CalledProcessError as e:
             err_msg = e.stderr.splitlines()
             self.error_message(context, err_msg)
-        self.vim.command('redraw! | echo \'Play album "\' . "' + target['album'] + '" . \'" by shuffle\'')
+        self.vim.command('redraw! | echo \'Play album "\' . "' + album + '" . \'" by shuffle\'')
 
     def action_play_a(self, context) -> None:
         filepath = shlex.quote(os.path.normpath(os.path.join(os.path.dirname(__file__),
             '../lib/music3.applescript')))
         target = context['targets'][0]
-        album = target['album']
+        album = target['album'].replace('"', '\\"')
         artist = target['artist']
         tid = target['id']
         cmd_s = 'osascript -e \'tell app "Music" to set shuffle enabled to false\''
@@ -64,7 +64,7 @@ class Kind(Base):
         except CalledProcessError as e:
             err_msg = e.stderr.splitlines()
             self.error_message(context, err_msg)
-        self.vim.command('redraw! | echo \'Play album "\' . "'  + target['album'] + '" . \'"\'')
+        self.vim.command('redraw! | echo \'Play album "\' . "'  + album + '" . \'"\'')
 
     def action_back(self, context) -> None:
         if context['targets'][0]['plflag']:
