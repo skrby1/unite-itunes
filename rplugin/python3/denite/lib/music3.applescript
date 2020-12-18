@@ -26,7 +26,7 @@ on run argv
           set v_words to comment of track (v_plt - h) of v_it
           set v_comment to do shell script "echo '" & v_words & "' | perl -pe 's/Vim//'"
           set (comment of track (v_plt - h) of v_it) to v_comment
-          delay 0.13
+          delay 0.15
         end repeat
       end if
     end if
@@ -37,8 +37,23 @@ on run argv
     end if
     set l_album_t to {}
     set l_idx to {}
+    set l_dn to {1}
+    set v_tn to 0
+    set v_cdn to 1
     repeat with i in l_album
-      set l_idx to l_idx & track number of i
+      if (disc number of i is not v_cdn) and (disc number of i is not in l_dn) then
+      set l_dn to l_dn & disc number of i
+      set v_cdn to disc number of i
+      set v_cnt to (disc number of i) - 1
+      set v_an to album of i
+      set v_tn to 0
+      repeat v_cnt times
+        set l_tmp to (tracks whose album is v_an and disc number is v_cnt)
+        set v_tn to v_tn + (track count of item 1 of l_tmp)
+        set v_cnt to v_cnt - 1
+      end repeat
+      end if
+      set l_idx to l_idx & ((track number of i) + v_tn)
       set l_album_t to l_album_t & ""
     end repeat
     set v_cnt to 1
@@ -50,9 +65,9 @@ on run argv
     --add l_album_t to playlist "Vim-test"
     repeat with k in l_album_t
       set comment of k to (comment of k) & "Vim"
-      delay 0.28
+      delay 0.30
     end repeat
-    delay (v_plt * 0.13) + ((count items of l_album_t) * 0.28) + 0.25
+    delay (v_plt * 0.15) + ((count items of l_album_t) * 0.30) + 0.30
     reveal track 1 of playlist "Vim"
     play playlist "Vim"
   end tell

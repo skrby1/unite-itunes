@@ -26,7 +26,22 @@ on run argv
     end if
     set l_album_t to {}
     set l_idx to {}
+    set l_dn to {1}
+    set v_tn to 0
+    set v_cdn to 1
     repeat with i in l_album
+      if (disc number of i is not v_cdn) and (disc number of i is not in l_dn) then
+        set l_dn to l_dn & disc number of i
+        set v_cdn to disc number of i
+        set v_cnt to (disc number of i) - 1
+        set v_an to album of i
+        set v_tn to 0
+        repeat v_cnt times
+          set l_tmp to (tracks whose album is v_an and disc number is v_cnt)
+          set v_tn to v_tn + (track count of item 1 of l_tmp)
+          set v_cnt to v_cnt - 1
+        end repeat
+      end if
       set l_idx to l_idx & track number of i
       set l_album_t to l_album_t & ""
     end repeat
