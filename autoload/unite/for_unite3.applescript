@@ -15,7 +15,7 @@ on run argv
           set v_words to comment of track (v_plt - h) of v_it
           set v_comment to do shell script "echo '" & v_words & "' | perl -pe 's/Unite//'"
           set (comment of track (v_plt - h) of v_it) to v_comment
-          delay 0.15
+          delay 0.20
         end repeat
       end if
     end if
@@ -56,7 +56,7 @@ on run argv
       set comment of k to (comment of k) & "Unite"
       delay 0.3
     end repeat
-    delay (v_plt * 0.15) + ((count items of l_album_t) * 0.30) + 0.3
+    delay (v_plt * 0.20) + ((count items of l_album_t) * 0.30) + 0.3
     reveal track 1 of playlist "Unite"
     play playlist "Unite"
   end tell
