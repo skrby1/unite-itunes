@@ -36,24 +36,30 @@ on run argv
       set l_album to tracks whose (album is item 1 of argv) and (artist contains item 2 of argv)
     end if
     set l_album_t to {}
-    set l_idx to {}
+    set l_idx to {0}
     set l_dn to {1}
     set v_tn to 0
     set v_cdn to 1
     repeat with i in l_album
-      if (disc number of i is not v_cdn) and (disc number of i is not in l_dn) then
-      set l_dn to l_dn & disc number of i
-      set v_cdn to disc number of i
-      set v_cnt to (disc number of i) - 1
-      set v_an to album of i
-      set v_tn to 0
-      repeat v_cnt times
-        set l_tmp to (tracks whose album is v_an and disc number is v_cnt)
-        set v_tn to v_tn + (track count of item 1 of l_tmp)
-        set v_cnt to v_cnt - 1
-      end repeat
+      set v_dn to disc number of i
+      if (v_dn is not v_cdn) and (v_dn is not in l_dn) then
+        set l_dn to l_dn & v_dn
+        set v_cdn to v_dn
+        set v_cnt to v_dn - 1
+        set v_an to album of i
+        set v_tn to 0
+        if item 1 of l_idx is not 0 then
+          repeat v_cnt times
+            set l_tmp to (tracks whose album is v_an and disc number is v_cnt)
+            set v_tn to v_tn + (track count of item 1 of l_tmp)
+          end repeat
+        end if
       end if
-      set l_idx to l_idx & ((track number of i) + v_tn)
+      if item 1 of l_idx is 0 then
+        set item 1 of l_idx to ((track number of i) + v_tn)
+      else
+        set l_idx to l_idx & ((track number of i) + v_tn)
+      end if
       set l_album_t to l_album_t & ""
     end repeat
     set v_cnt to 1

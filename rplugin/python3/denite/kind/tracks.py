@@ -37,8 +37,9 @@ class Kind(Base):
         target = context['targets'][0]
         album = target['album'].replace('"', '\\"')
         artist = target['artist']
+        tid = target['id']
         cmd_s = 'osascript -e \'tell app "Music" to set shuffle enabled to true\''
-        cmd = 'osascript ' + filepath + " \"" + album + "\" \"" + artist + "\" '" + target['id'] + "'"
+        cmd = 'osascript ' + filepath + " \"" + album + "\" \"" + artist + "\" '" + tid + "'"
         self.vim.command('redraw! | echo \'Now Loading...\'')
         try:
             run(cmd_s, shell=True, text=True)
@@ -56,7 +57,7 @@ class Kind(Base):
         artist = target['artist']
         tid = target['id']
         cmd_s = 'osascript -e \'tell app "Music" to set shuffle enabled to false\''
-        cmd = 'osascript ' + filepath + " \"" + album + "\" \"" + artist + "\" '" + target['id'] + "'"
+        cmd = 'osascript ' + filepath + " \"" + album + "\" \"" + artist + "\" '" + tid + "'"
         self.vim.command('redraw! | echo \'Now Loading...\'')
         try:
             run(cmd_s, shell=True, text=True)
