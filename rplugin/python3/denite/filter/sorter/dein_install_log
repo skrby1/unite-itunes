@@ -1,0 +1,1409 @@
+Update started: (2021/01/04 06:03:56)
+(  8/129) [+-------------------] emmet-vim
+(  1/129) origin/HEAD set to master
+(  1/129) origin/HEAD set to master
+(  2/129) origin/HEAD set to master
+(  5/129) origin/HEAD set to master
+(  7/129) origin/HEAD set to master
+(  1/129) origin/HEAD set to master
+(  2/129) origin/HEAD set to master
+(  3/129) origin/HEAD set to master
+(  4/129) origin/HEAD set to master
+(  5/129) origin/HEAD set to master
+(  7/129) origin/HEAD set to master
+(  1/129) origin/HEAD set to master
+(  2/129) origin/HEAD set to master
+(  3/129) origin/HEAD set to master
+(  4/129) origin/HEAD set to master
+(  5/129) origin/HEAD set to master
+(  6/129) origin/HEAD set to master
+(  7/129) origin/HEAD set to master
+(  1/129) origin/HEAD set to master
+(  2/129) origin/HEAD set to master
+(  3/129) origin/HEAD set to master
+(  4/129) origin/HEAD set to master
+(  5/129) origin/HEAD set to master
+(  6/129) origin/HEAD set to master
+(  7/129) origin/HEAD set to master
+(  8/129) origin/HEAD set to master
+(  1/129) origin/HEAD set to master
+Already up to date.
+(  2/129) origin/HEAD set to master
+Already up to date.
+(  3/129) origin/HEAD set to master
+Already up to date.
+(  4/129) origin/HEAD set to master
+Already up to date.
+(  5/129) origin/HEAD set to master
+Already up to date.
+(  6/129) origin/HEAD set to master
+(  7/129) origin/HEAD set to master
+Already up to date.
+(  8/129) origin/HEAD set to master
+(  1/129) origin/HEAD set to master
+Already up to date.
+(  2/129) origin/HEAD set to master
+Already up to date.
+(  3/129) origin/HEAD set to master
+Already up to date.
+(  4/129) origin/HEAD set to master
+Already up to date.
+(  5/129) origin/HEAD set to master
+Already up to date.
+
+(  5/129) |unite-tag           | Same revision
+(  6/129) origin/HEAD set to master
+(  7/129) origin/HEAD set to master
+Already up to date.
+(  8/129) origin/HEAD set to master
+(  1/129) origin/HEAD set to master
+Already up to date.
+
+(  1/129) |deoplete-swift      | Same revision
+(  2/129) origin/HEAD set to master
+Already up to date.
+
+(  2/129) |vim-operator-sort   | Same revision
+(  3/129) origin/HEAD set to master
+Already up to date.
+
+(  3/129) |vim-operator-user   | Same revision
+(  4/129) origin/HEAD set to master
+Already up to date.
+
+(  4/129) |vim-metarw          | Same revision
+(  6/129) origin/HEAD set to master
+Already up to date.
+(  7/129) origin/HEAD set to master
+Already up to date.
+
+(  7/129) |deoplete-zsh        | Same revision
+(  8/129) origin/HEAD set to master
+(  9/129) [+-------------------] winresizer
+( 12/129) |vim-operator-shaberu| 
+(  6/129) origin/HEAD set to master
+Already up to date.
+
+(  6/129) |vimshell            | Same revision
+(  8/129) origin/HEAD set to master
+Already up to date.
+
+(  8/129) |vim-maktaba         | Same revision
+( 15/129) [++------------------] vim-operator-mdurl
+( 17/129) [++------------------] rargs.vim
+(  9/129) origin/HEAD set to master
+( 10/129) origin/HEAD set to master
+(  9/129) origin/HEAD set to master
+( 10/129) origin/HEAD set to master
+( 11/129) origin/HEAD set to master
+(  9/129) origin/HEAD set to master
+( 10/129) origin/HEAD set to master
+( 11/129) origin/HEAD set to master
+( 13/129) origin/HEAD set to master
+( 17/129) origin/HEAD set to master
+(  9/129) origin/HEAD set to master
+( 10/129) origin/HEAD set to master
+( 11/129) origin/HEAD set to master
+( 13/129) origin/HEAD set to master
+( 14/129) origin/HEAD set to master
+( 16/129) origin/HEAD set to master
+( 17/129) origin/HEAD set to master
+(  9/129) origin/HEAD set to master
+( 10/129) origin/HEAD set to master
+( 11/129) origin/HEAD set to master
+( 13/129) origin/HEAD set to master
+( 14/129) origin/HEAD set to master
+( 15/129) origin/HEAD set to master
+( 16/129) origin/HEAD set to master
+( 17/129) origin/HEAD set to master
+(  9/129) origin/HEAD set to master
+( 10/129) origin/HEAD set to master
+Already up to date.
+( 11/129) origin/HEAD set to master
+( 13/129) origin/HEAD set to master
+( 14/129) origin/HEAD set to master
+( 15/129) origin/HEAD set to master
+( 16/129) origin/HEAD set to master
+( 17/129) origin/HEAD set to master
+(  9/129) origin/HEAD set to master
+Already up to date.
+( 10/129) origin/HEAD set to master
+Already up to date.
+
+( 10/129) |winresizer          | Same revision
+( 11/129) origin/HEAD set to master
+Already up to date.
+
+( 11/129) |vim-selection       | Same revision
+( 13/129) origin/HEAD set to master
+( 14/129) origin/HEAD set to master
+( 15/129) origin/HEAD set to master
+( 16/129) origin/HEAD set to master
+( 17/129) origin/HEAD set to master
+(  9/129) origin/HEAD set to master
+Already up to date.
+
+(  9/129) |emmet-vim           | Same revision
+( 13/129) origin/HEAD set to master
+Already up to date.
+
+( 13/129) |scratch.vim         | Same revision
+( 14/129) origin/HEAD set to master
+Already up to date.
+
+( 14/129) |VimCalc3            | Same revision
+( 15/129) origin/HEAD set to master
+( 16/129) origin/HEAD set to master
+Already up to date.
+
+( 16/129) |vim-operator-mdurl  | Same revision
+( 17/129) origin/HEAD set to master
+Already up to date.
+
+( 17/129) |dash.vim            | Same revision
+( 19/129) [++------------------] vim-visual-multi
+( 15/129) origin/HEAD set to master
+Already up to date.
+
+( 15/129) |dein.vim            | Same revision
+( 24/129) [+++-----------------] unite-launch
+( 25/129) [+++-----------------] ale
+( 18/129) origin/HEAD set to master
+( 18/129) origin/HEAD set to master
+( 18/129) origin/HEAD set to master
+( 19/129) origin/HEAD set to master
+( 18/129) origin/HEAD set to master
+( 19/129) origin/HEAD set to master
+( 18/129) origin/HEAD set to master
+( 19/129) origin/HEAD set to master
+( 21/129) origin/HEAD set to master
+( 23/129) origin/HEAD set to master
+( 24/129) origin/HEAD set to master
+( 18/129) origin/HEAD set to master
+( 19/129) origin/HEAD set to master
+( 21/129) origin/HEAD set to master
+( 23/129) origin/HEAD set to master
+( 24/129) origin/HEAD set to master
+( 25/129) origin/HEAD set to master
+( 18/129) origin/HEAD set to master
+( 19/129) origin/HEAD set to master
+( 20/129) origin/HEAD set to master
+( 21/129) origin/HEAD set to master
+( 23/129) origin/HEAD set to master
+( 24/129) origin/HEAD set to master
+( 25/129) origin/HEAD set to master
+( 18/129) origin/HEAD set to master
+Already up to date.
+( 19/129) origin/HEAD set to master
+( 20/129) origin/HEAD set to master
+( 21/129) origin/HEAD set to master
+( 23/129) origin/HEAD set to master
+( 24/129) origin/HEAD set to master
+( 25/129) origin/HEAD set to master
+( 18/129) origin/HEAD set to master
+Already up to date.
+
+( 18/129) |rargs.vim           | Same revision
+( 19/129) origin/HEAD set to master
+Already up to date.
+
+( 19/129) |neoinclude.vim      | Same revision
+( 20/129) origin/HEAD set to master
+( 21/129) origin/HEAD set to master
+( 22/129) origin/HEAD set to master
+( 23/129) origin/HEAD set to master
+( 24/129) origin/HEAD set to master
+( 25/129) origin/HEAD set to master
+( 20/129) origin/HEAD set to master
+( 21/129) origin/HEAD set to master
+Already up to date.
+
+( 21/129) |vim-jplus           | Same revision
+( 22/129) origin/HEAD set to master
+( 23/129) origin/HEAD set to master
+Already up to date.
+
+( 23/129) |vim-operator-ag     | Same revision
+( 24/129) origin/HEAD set to master
+Already up to date.
+
+( 24/129) |vim-migemo          | Same revision
+( 25/129) origin/HEAD set to master
+Already up to date.
+( 27/129) [++++----------------] sudo.vim
+( 20/129) origin/HEAD set to master
+Already up to date.
+( 22/129) origin/HEAD set to master
+( 25/129) origin/HEAD set to master
+Already up to date.
+
+( 25/129) |unite-launch        | Same revision
+( 30/129) [++++----------------] vim-textobj-between
+( 20/129) origin/HEAD set to master
+Already up to date.
+
+( 20/129) |vim-visual-multi    | Same revision
+( 22/129) origin/HEAD set to master
+( 31/129) [++++----------------] vim-easymotion
+( 22/129) origin/HEAD set to master
+Already up to date.
+( 32/129) [++++----------------] unite-session
+( 22/129) origin/HEAD set to master
+Already up to date.
+
+( 22/129) |fzf.vim             | Same revision
+( 33/129) [+++++---------------] magnum.vim
+( 27/129) origin/HEAD set to master
+( 27/129) origin/HEAD set to master
+( 27/129) origin/HEAD set to master
+( 27/129) origin/HEAD set to master
+( 28/129) origin/HEAD set to master
+( 27/129) origin/HEAD set to master
+( 28/129) origin/HEAD set to master
+( 29/129) origin/HEAD set to master
+( 30/129) origin/HEAD set to master
+( 27/129) origin/HEAD set to master
+( 28/129) origin/HEAD set to master
+( 29/129) origin/HEAD set to master
+( 30/129) origin/HEAD set to master
+( 31/129) origin/HEAD set to master
+( 27/129) origin/HEAD set to master
+( 28/129) origin/HEAD set to master
+( 29/129) origin/HEAD set to master
+( 30/129) origin/HEAD set to master
+( 31/129) origin/HEAD set to master
+( 27/129) origin/HEAD set to master
+Already up to date.
+( 28/129) origin/HEAD set to master
+( 29/129) origin/HEAD set to master
+( 30/129) origin/HEAD set to master
+( 31/129) origin/HEAD set to master
+( 33/129) origin/HEAD set to master
+( 27/129) origin/HEAD set to master
+Already up to date.
+
+( 27/129) |vim-vis             | Same revision
+( 28/129) origin/HEAD set to master
+( 29/129) origin/HEAD set to master
+( 30/129) origin/HEAD set to master
+( 31/129) origin/HEAD set to master
+( 32/129) origin/HEAD set to master
+( 33/129) origin/HEAD set to master
+( 26/129) origin/HEAD set to master
+( 28/129) origin/HEAD set to master
+Already up to date.
+
+( 28/129) |sudo.vim            | Same revision
+( 29/129) origin/HEAD set to master
+Already up to date.
+
+( 29/129) |shaberu.vim         | Same revision
+( 30/129) origin/HEAD set to master
+Already up to date.
+
+( 30/129) |nvim-yarp           | Same revision
+( 31/129) origin/HEAD set to master
+( 32/129) origin/HEAD set to master
+( 33/129) origin/HEAD set to master
+( 34/129) [+++++---------------] vim-operator-sequence
+( 26/129) origin/HEAD set to master
+( 31/129) origin/HEAD set to master
+Already up to date.
+
+( 31/129) |vim-textobj-between | Same revision
+( 32/129) origin/HEAD set to master
+( 33/129) origin/HEAD set to master
+( 37/129) [+++++---------------] vim-operator-evalf
+( 26/129) origin/HEAD set to master
+( 32/129) origin/HEAD set to master
+( 33/129) origin/HEAD set to master
+Already up to date.
+
+( 33/129) |unite-session       | Same revision
+( 38/129) [+++++---------------] vim-indent-guides
+( 26/129) origin/HEAD set to master
+( 32/129) origin/HEAD set to master
+Already up to date.
+( 39/129) [++++++--------------] foxdot.vim
+( 26/129) origin/HEAD set to master
+( 32/129) origin/HEAD set to master
+Already up to date.
+
+( 32/129) |vim-easymotion      | Same revision
+( 26/129) origin/HEAD set to master
+( 40/129) [++++++--------------] neco-tweetvim
+( 26/129) origin/HEAD set to master
+( 26/129) origin/HEAD set to master
+( 26/129) origin/HEAD set to master
+Already up to date.
+( 26/129) origin/HEAD set to master
+Already up to date.
+
+( 26/129) |ale                 | Same revision
+( 41/129) [++++++--------------] vim-submode
+( 34/129) origin/HEAD set to master
+( 34/129) origin/HEAD set to master
+( 34/129) origin/HEAD set to master
+( 34/129) origin/HEAD set to master
+( 34/129) origin/HEAD set to master
+( 35/129) origin/HEAD set to master
+( 34/129) origin/HEAD set to master
+( 35/129) origin/HEAD set to master
+( 37/129) origin/HEAD set to master
+( 34/129) origin/HEAD set to master
+( 35/129) origin/HEAD set to master
+( 36/129) origin/HEAD set to master
+( 37/129) origin/HEAD set to master
+( 38/129) origin/HEAD set to master
+( 34/129) origin/HEAD set to master
+( 35/129) origin/HEAD set to master
+( 36/129) origin/HEAD set to master
+( 37/129) origin/HEAD set to master
+( 38/129) origin/HEAD set to master
+( 34/129) origin/HEAD set to master
+Already up to date.
+
+( 34/129) |magnum.vim          | Same revision
+( 35/129) origin/HEAD set to master
+( 36/129) origin/HEAD set to master
+( 37/129) origin/HEAD set to master
+( 38/129) origin/HEAD set to master
+( 35/129) origin/HEAD set to master
+( 36/129) origin/HEAD set to master
+( 37/129) origin/HEAD set to master
+( 38/129) origin/HEAD set to master
+( 39/129) origin/HEAD set to master
+( 40/129) origin/HEAD set to master
+( 42/129) [++++++--------------] Nvim-R
+( 35/129) origin/HEAD set to master
+Already up to date.
+
+( 35/129) |vim-operator-sequence| Same revision
+( 36/129) origin/HEAD set to master
+( 37/129) origin/HEAD set to master
+Already up to date.
+
+( 37/129) |tabular             | Same revision
+( 38/129) origin/HEAD set to master
+( 39/129) origin/HEAD set to master
+( 40/129) origin/HEAD set to master
+( 36/129) origin/HEAD set to master
+Already up to date.
+
+( 36/129) |memolist.vim        | Same revision
+( 38/129) origin/HEAD set to master
+Already up to date.
+
+( 38/129) |vim-operator-evalf  | Same revision
+( 39/129) origin/HEAD set to master
+( 40/129) origin/HEAD set to master
+( 41/129) origin/HEAD set to master
+( 44/129) [++++++--------------] unite-tweetvim
+( 39/129) origin/HEAD set to master
+( 40/129) origin/HEAD set to master
+Already up to date.
+( 41/129) origin/HEAD set to master
+( 46/129) [+++++++-------------] autocomplete-flow
+( 39/129) origin/HEAD set to master
+Already up to date.
+
+( 39/129) |vim-indent-guides   | Same revision
+( 40/129) origin/HEAD set to master
+Already up to date.
+
+( 40/129) |foxdot.vim          | Same revision
+( 41/129) origin/HEAD set to master
+( 41/129) origin/HEAD set to master
+( 48/129) [+++++++-------------] open-browser.vim
+( 41/129) origin/HEAD set to master
+Already up to date.
+( 41/129) origin/HEAD set to master
+Already up to date.
+( 41/129) origin/HEAD set to master
+Already up to date.
+
+( 41/129) |neco-tweetvim       | Same revision
+( 49/129) [+++++++-------------] vinarise.vim
+( 42/129) origin/HEAD set to master
+( 42/129) origin/HEAD set to master
+( 42/129) origin/HEAD set to master
+( 42/129) origin/HEAD set to master
+( 42/129) origin/HEAD set to master
+( 42/129) origin/HEAD set to master
+( 42/129) origin/HEAD set to master
+( 45/129) origin/HEAD set to master
+( 46/129) origin/HEAD set to master
+( 42/129) origin/HEAD set to master
+( 45/129) origin/HEAD set to master
+( 46/129) origin/HEAD set to master
+( 42/129) origin/HEAD set to master
+Already up to date.
+( 43/129) origin/HEAD set to master
+( 44/129) origin/HEAD set to master
+( 45/129) origin/HEAD set to master
+( 46/129) origin/HEAD set to master
+( 42/129) origin/HEAD set to master
+Already up to date.
+
+( 42/129) |vim-submode         | Same revision
+( 43/129) origin/HEAD set to master
+( 44/129) origin/HEAD set to master
+( 45/129) origin/HEAD set to master
+( 46/129) origin/HEAD set to master
+( 47/129) origin/HEAD set to master
+( 43/129) origin/HEAD set to master
+( 44/129) origin/HEAD set to master
+( 45/129) origin/HEAD set to master
+( 46/129) origin/HEAD set to master
+( 47/129) origin/HEAD set to master
+( 50/129) [+++++++-------------] vim-trailing-whitespace
+( 43/129) origin/HEAD set to master
+( 44/129) origin/HEAD set to master
+( 45/129) origin/HEAD set to master
+Already up to date.
+
+( 45/129) |unite-tweetvim      | Same revision
+( 46/129) origin/HEAD set to master
+Already up to date.
+
+( 46/129) |vim-ref-R           | Same revision
+( 47/129) origin/HEAD set to master
+( 43/129) origin/HEAD set to master
+Already up to date.
+( 44/129) origin/HEAD set to master
+( 47/129) origin/HEAD set to master
+( 52/129) [++++++++------------] vim-wwwsearch
+( 43/129) origin/HEAD set to master
+Already up to date.
+
+( 43/129) |Nvim-R              | Same revision
+( 44/129) origin/HEAD set to master
+Already up to date.
+
+( 44/129) |vim-ref             | Same revision
+( 47/129) origin/HEAD set to master
+Already up to date.
+( 48/129) origin/HEAD set to master
+( 49/129) origin/HEAD set to master
+( 47/129) origin/HEAD set to master
+Already up to date.
+
+( 47/129) |autocomplete-flow   | Same revision
+( 48/129) origin/HEAD set to master
+( 49/129) origin/HEAD set to master
+( 54/129) [++++++++------------] vim-quickrun
+( 48/129) origin/HEAD set to master
+( 49/129) origin/HEAD set to master
+( 55/129) [++++++++------------] vim-perl
+( 48/129) origin/HEAD set to master
+( 49/129) origin/HEAD set to master
+( 48/129) origin/HEAD set to master
+( 49/129) origin/HEAD set to master
+Already up to date.
+( 48/129) origin/HEAD set to master
+( 49/129) origin/HEAD set to master
+Already up to date.
+
+( 49/129) |open-browser.vim    | Same revision
+( 48/129) origin/HEAD set to master
+Already up to date.
+( 56/129) [++++++++------------] TweetVim
+( 48/129) origin/HEAD set to master
+Already up to date.
+
+( 48/129) |vim-javascript      | Same revision
+( 50/129) origin/HEAD set to master
+( 57/129) [++++++++------------] vimproc.vim
+( 50/129) origin/HEAD set to master
+( 50/129) origin/HEAD set to master
+( 51/129) origin/HEAD set to master
+( 50/129) origin/HEAD set to master
+( 51/129) origin/HEAD set to master
+( 52/129) origin/HEAD set to master
+( 50/129) origin/HEAD set to master
+( 51/129) origin/HEAD set to master
+( 52/129) origin/HEAD set to master
+( 50/129) origin/HEAD set to master
+( 51/129) origin/HEAD set to master
+( 52/129) origin/HEAD set to master
+( 53/129) origin/HEAD set to master
+( 50/129) origin/HEAD set to master
+Already up to date.
+( 51/129) origin/HEAD set to master
+( 52/129) origin/HEAD set to master
+( 53/129) origin/HEAD set to master
+( 50/129) origin/HEAD set to master
+Already up to date.
+
+( 50/129) |vinarise.vim        | Same revision
+( 51/129) origin/HEAD set to master
+( 52/129) origin/HEAD set to master
+( 53/129) origin/HEAD set to master
+( 54/129) origin/HEAD set to master
+( 51/129) origin/HEAD set to master
+Already up to date.
+( 52/129) origin/HEAD set to master
+( 53/129) origin/HEAD set to master
+( 54/129) origin/HEAD set to master
+( 58/129) [++++++++------------] Align
+( 51/129) origin/HEAD set to master
+Already up to date.
+
+( 51/129) |vim-trailing-whitespace| Same revision
+( 52/129) origin/HEAD set to master
+Already up to date.
+
+( 52/129) |vim-metarw-http     | Same revision
+( 53/129) origin/HEAD set to master
+( 54/129) origin/HEAD set to master
+( 53/129) origin/HEAD set to master
+Already up to date.
+( 54/129) origin/HEAD set to master
+( 55/129) origin/HEAD set to master
+( 60/129) [+++++++++-----------] textobj-motionmotion.vim
+( 53/129) origin/HEAD set to master
+Already up to date.
+
+( 53/129) |vim-wwwsearch       | Same revision
+( 54/129) origin/HEAD set to master
+( 55/129) origin/HEAD set to master
+( 54/129) origin/HEAD set to master
+( 55/129) origin/HEAD set to master
+( 56/129) origin/HEAD set to dev
+( 61/129) [+++++++++-----------] vim-operator-surround
+( 54/129) origin/HEAD set to master
+Already up to date.
+
+( 54/129) |YankRing.vim        | Same revision
+( 55/129) origin/HEAD set to master
+( 56/129) origin/HEAD set to dev
+( 57/129) origin/HEAD set to master
+( 55/129) origin/HEAD set to master
+( 56/129) origin/HEAD set to dev
+( 57/129) origin/HEAD set to master
+( 62/129) [+++++++++-----------] vim-radical
+( 55/129) origin/HEAD set to master
+Already up to date.
+( 56/129) origin/HEAD set to dev
+( 57/129) origin/HEAD set to master
+( 55/129) origin/HEAD set to master
+Already up to date.
+
+( 55/129) |vim-quickrun        | Same revision
+( 56/129) origin/HEAD set to dev
+( 57/129) origin/HEAD set to master
+( 56/129) origin/HEAD set to dev
+( 57/129) origin/HEAD set to master
+( 63/129) [+++++++++-----------] unite.vim
+( 56/129) origin/HEAD set to dev
+Already up to date.
+
+( 56/129) |vim-perl            | Same revision
+( 57/129) origin/HEAD set to master
+Already up to date.
+( 57/129) origin/HEAD set to master
+Already up to date.
+
+( 57/129) |TweetVim            | Same revision
+( 64/129) [+++++++++-----------] ref-processing-vim
+( 58/129) origin/HEAD set to master
+( 65/129) [++++++++++----------] vim-textobj-fold
+( 58/129) origin/HEAD set to master
+( 59/129) origin/HEAD set to master
+( 60/129) origin/HEAD set to master
+( 58/129) origin/HEAD set to master
+( 59/129) origin/HEAD set to master
+( 60/129) origin/HEAD set to master
+( 58/129) origin/HEAD set to master
+( 59/129) origin/HEAD set to master
+( 60/129) origin/HEAD set to master
+( 61/129) origin/HEAD set to master
+( 58/129) origin/HEAD set to master
+( 59/129) origin/HEAD set to master
+( 60/129) origin/HEAD set to master
+( 61/129) origin/HEAD set to master
+( 58/129) origin/HEAD set to master
+( 59/129) origin/HEAD set to master
+( 60/129) origin/HEAD set to master
+( 61/129) origin/HEAD set to master
+( 62/129) origin/HEAD set to master
+( 58/129) origin/HEAD set to master
+( 59/129) origin/HEAD set to master
+Already up to date.
+( 60/129) origin/HEAD set to master
+( 61/129) origin/HEAD set to master
+( 62/129) origin/HEAD set to master
+( 58/129) origin/HEAD set to master
+Already up to date.
+( 59/129) origin/HEAD set to master
+Already up to date.
+
+( 59/129) |Align               | Same revision
+( 60/129) origin/HEAD set to master
+Already up to date.
+
+( 60/129) |perlomni.vim        | Same revision
+( 61/129) origin/HEAD set to master
+( 62/129) origin/HEAD set to master
+( 58/129) origin/HEAD set to master
+Already up to date.
+
+( 58/129) |vimproc.vim         | Same revision
+( 61/129) origin/HEAD set to master
+Already up to date.
+
+( 61/129) |textobj-motionmotion.vim| Same revision
+( 62/129) origin/HEAD set to master
+( 63/129) origin/HEAD set to master
+( 67/129) [++++++++++----------] im_control.vim
+( 62/129) origin/HEAD set to master
+Already up to date.
+( 63/129) origin/HEAD set to master
+( 69/129) [++++++++++----------] vim-swift-format
+( 62/129) origin/HEAD set to master
+Already up to date.
+
+( 62/129) |vim-operator-surround| Same revision
+( 63/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+( 63/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+( 70/129) [++++++++++----------] vim-tidal
+( 63/129) origin/HEAD set to master
+( 64/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+( 63/129) origin/HEAD set to master
+Already up to date.
+
+( 63/129) |vim-radical         | Same revision
+( 64/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+( 64/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+( 71/129) [+++++++++++---------] vimdoc-ja
+( 64/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+( 64/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+( 64/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+( 64/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+( 64/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+( 64/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+Already up to date.
+( 64/129) origin/HEAD set to master
+( 65/129) origin/HEAD set to master
+Already up to date.
+
+( 65/129) |ref-processing-vim  | Same revision
+( 64/129) origin/HEAD set to master
+( 66/129) origin/HEAD set to master
+( 67/129) origin/HEAD set to master
+( 72/129) [+++++++++++---------] vim-visualstar
+( 64/129) origin/HEAD set to master
+Already up to date.
+
+( 64/129) |unite.vim           | Same revision
+( 66/129) origin/HEAD set to master
+( 67/129) origin/HEAD set to master
+( 66/129) origin/HEAD set to master
+( 67/129) origin/HEAD set to master
+( 68/129) origin/HEAD set to master
+( 69/129) origin/HEAD set to master
+( 73/129) [+++++++++++---------] vim-qfreplace
+( 66/129) origin/HEAD set to master
+( 67/129) origin/HEAD set to master
+( 68/129) origin/HEAD set to master
+( 69/129) origin/HEAD set to master
+( 70/129) origin/HEAD set to master
+( 66/129) origin/HEAD set to master
+Already up to date.
+( 67/129) origin/HEAD set to master
+( 68/129) origin/HEAD set to master
+( 69/129) origin/HEAD set to master
+( 70/129) origin/HEAD set to master
+( 66/129) origin/HEAD set to master
+Already up to date.
+
+( 66/129) |vim-textobj-fold    | Same revision
+( 67/129) origin/HEAD set to master
+Already up to date.
+
+( 67/129) |vim-textobj-entire  | Same revision
+( 68/129) origin/HEAD set to master
+( 69/129) origin/HEAD set to master
+( 70/129) origin/HEAD set to master
+( 68/129) origin/HEAD set to master
+Already up to date.
+
+( 68/129) |im_control.vim      | Same revision
+( 69/129) origin/HEAD set to master
+Already up to date.
+
+( 69/129) |vim-textobj-enclosedsyntax| Same revision
+( 70/129) origin/HEAD set to master
+( 75/129) [+++++++++++---------] vim-crunch
+( 70/129) origin/HEAD set to master
+Already up to date.
+( 77/129) [+++++++++++---------] neosnippet.vim
+( 70/129) origin/HEAD set to master
+Already up to date.
+
+( 70/129) |vim-swift-format    | Same revision
+( 71/129) origin/HEAD set to master
+( 71/129) origin/HEAD set to master
+( 78/129) [++++++++++++--------] vim-showmarks
+( 71/129) origin/HEAD set to master
+( 71/129) origin/HEAD set to master
+( 71/129) origin/HEAD set to master
+( 73/129) origin/HEAD set to master
+( 71/129) origin/HEAD set to master
+( 73/129) origin/HEAD set to master
+( 71/129) origin/HEAD set to master
+( 72/129) origin/HEAD set to master
+( 73/129) origin/HEAD set to master
+( 71/129) origin/HEAD set to master
+Already up to date.
+( 72/129) origin/HEAD set to master
+( 73/129) origin/HEAD set to master
+( 71/129) origin/HEAD set to master
+Already up to date.
+
+( 71/129) |vim-tidal           | Same revision
+( 72/129) origin/HEAD set to master
+( 73/129) origin/HEAD set to master
+( 72/129) origin/HEAD set to master
+( 73/129) origin/HEAD set to master
+( 79/129) [++++++++++++--------] vim-operator-perl
+( 72/129) origin/HEAD set to master
+( 73/129) origin/HEAD set to master
+Already up to date.
+( 74/129) origin/HEAD set to master
+( 75/129) origin/HEAD set to master
+( 72/129) origin/HEAD set to master
+( 73/129) origin/HEAD set to master
+Already up to date.
+
+( 73/129) |vim-visualstar      | Same revision
+( 74/129) origin/HEAD set to master
+( 75/129) origin/HEAD set to master
+( 72/129) origin/HEAD set to master
+( 74/129) origin/HEAD set to master
+( 75/129) origin/HEAD set to master
+( 76/129) origin/HEAD set to master
+( 80/129) [++++++++++++--------] vim-textobj-function
+( 72/129) origin/HEAD set to master
+Already up to date.
+
+( 72/129) |vimdoc-ja           | Same revision
+( 74/129) origin/HEAD set to master
+( 75/129) origin/HEAD set to master
+( 76/129) origin/HEAD set to master
+( 74/129) origin/HEAD set to master
+Already up to date.
+( 75/129) origin/HEAD set to master
+( 76/129) origin/HEAD set to master
+( 81/129) [++++++++++++--------] auto-ctags.vim
+( 74/129) origin/HEAD set to master
+Already up to date.
+
+( 74/129) |vim-qfreplace       | Same revision
+( 75/129) origin/HEAD set to master
+Already up to date.
+( 76/129) origin/HEAD set to master
+( 77/129) origin/HEAD set to master
+( 78/129) origin/HEAD set to master
+( 75/129) origin/HEAD set to master
+Already up to date.
+
+( 75/129) |vim-processing      | Same revision
+( 76/129) origin/HEAD set to master
+( 77/129) origin/HEAD set to master
+( 78/129) origin/HEAD set to master
+( 82/129) [++++++++++++--------] vim-operator-filled-with-blank
+( 76/129) origin/HEAD set to master
+Already up to date.
+
+( 76/129) |vim-crunch          | Same revision
+( 77/129) origin/HEAD set to master
+( 78/129) origin/HEAD set to master
+( 83/129) [++++++++++++--------] vim-pandoc
+( 77/129) origin/HEAD set to master
+( 78/129) origin/HEAD set to master
+( 84/129) [+++++++++++++-------] vim-textobj-sigil
+( 77/129) origin/HEAD set to master
+( 78/129) origin/HEAD set to master
+( 79/129) origin/HEAD set to master
+( 77/129) origin/HEAD set to master
+( 78/129) origin/HEAD set to master
+Already up to date.
+( 79/129) origin/HEAD set to master
+( 77/129) origin/HEAD set to master
+Already up to date.
+( 78/129) origin/HEAD set to master
+Already up to date.
+
+( 78/129) |neosnippet.vim      | Same revision
+( 79/129) origin/HEAD set to master
+( 77/129) origin/HEAD set to master
+Already up to date.
+
+( 77/129) |deoplete.nvim       | Same revision
+( 79/129) origin/HEAD set to master
+( 80/129) origin/HEAD set to master
+( 85/129) [+++++++++++++-------] textobj-mbboundary.vim
+( 79/129) origin/HEAD set to master
+( 80/129) origin/HEAD set to master
+( 86/129) [+++++++++++++-------] twibill.vim
+( 79/129) origin/HEAD set to master
+Already up to date.
+( 80/129) origin/HEAD set to master
+( 81/129) origin/HEAD set to master
+( 79/129) origin/HEAD set to master
+Already up to date.
+
+( 79/129) |vim-showmarks       | Same revision
+( 80/129) origin/HEAD set to master
+( 81/129) origin/HEAD set to master
+( 80/129) origin/HEAD set to master
+( 81/129) origin/HEAD set to master
+( 87/129) [+++++++++++++-------] vim-pandoc-syntax
+( 80/129) origin/HEAD set to master
+Already up to date.
+( 81/129) origin/HEAD set to master
+( 82/129) origin/HEAD set to master
+( 83/129) origin/HEAD set to master
+( 80/129) origin/HEAD set to master
+Already up to date.
+
+( 80/129) |vim-operator-perl   | Same revision
+( 81/129) origin/HEAD set to master
+( 82/129) origin/HEAD set to master
+( 83/129) origin/HEAD set to master
+( 81/129) origin/HEAD set to master
+Already up to date.
+( 82/129) origin/HEAD set to master
+( 83/129) origin/HEAD set to master
+( 88/129) [+++++++++++++-------] vim-textobj-user
+( 81/129) origin/HEAD set to master
+Already up to date.
+
+( 81/129) |vim-textobj-function| Same revision
+( 82/129) origin/HEAD set to master
+( 83/129) origin/HEAD set to master
+( 82/129) origin/HEAD set to master
+( 83/129) origin/HEAD set to master
+( 84/129) origin/HEAD set to master
+( 89/129) [+++++++++++++-------] vim-markdown
+( 82/129) origin/HEAD set to master
+Already up to date.
+( 83/129) origin/HEAD set to master
+Already up to date.
+( 84/129) origin/HEAD set to master
+( 85/129) origin/HEAD set to master
+( 82/129) origin/HEAD set to master
+Already up to date.
+
+( 82/129) |auto-ctags.vim      | Same revision
+( 83/129) origin/HEAD set to master
+Already up to date.
+
+( 83/129) |vim-operator-filled-with-blank| Same revision
+( 84/129) origin/HEAD set to master
+( 85/129) origin/HEAD set to master
+( 84/129) origin/HEAD set to master
+( 85/129) origin/HEAD set to master
+( 86/129) origin/HEAD set to master
+( 91/129) [++++++++++++++------] unite-perl-module.vim
+( 84/129) origin/HEAD set to master
+( 85/129) origin/HEAD set to master
+( 86/129) origin/HEAD set to master
+( 84/129) origin/HEAD set to master
+( 85/129) origin/HEAD set to master
+( 86/129) origin/HEAD set to master
+( 87/129) origin/HEAD set to master
+( 84/129) origin/HEAD set to master
+Already up to date.
+( 85/129) origin/HEAD set to master
+Already up to date.
+( 86/129) origin/HEAD set to master
+( 87/129) origin/HEAD set to master
+( 84/129) origin/HEAD set to master
+Already up to date.
+
+( 84/129) |vim-pandoc          | Same revision
+( 85/129) origin/HEAD set to master
+Already up to date.
+
+( 85/129) |vim-textobj-sigil   | Same revision
+( 86/129) origin/HEAD set to master
+( 87/129) origin/HEAD set to master
+( 86/129) origin/HEAD set to master
+Already up to date.
+
+( 86/129) |textobj-mbboundary.vim| Same revision
+( 87/129) origin/HEAD set to master
+( 93/129) [++++++++++++++------] vim-textobj-indent
+( 87/129) origin/HEAD set to master
+( 88/129) origin/HEAD set to master
+( 94/129) [++++++++++++++------] vim-operator-replace
+( 87/129) origin/HEAD set to master
+Already up to date.
+( 88/129) origin/HEAD set to master
+( 87/129) origin/HEAD set to master
+Already up to date.
+
+( 87/129) |twibill.vim         | Same revision
+( 88/129) origin/HEAD set to master
+( 88/129) origin/HEAD set to master
+( 95/129) [++++++++++++++------] vim-textobj-lastpat
+( 88/129) origin/HEAD set to master
+( 89/129) origin/HEAD set to master
+( 88/129) origin/HEAD set to master
+( 89/129) origin/HEAD set to master
+( 88/129) origin/HEAD set to master
+( 89/129) origin/HEAD set to master
+( 88/129) origin/HEAD set to master
+( 89/129) origin/HEAD set to master
+( 88/129) origin/HEAD set to master
+Already up to date.
+
+( 88/129) |vim-pandoc-syntax   | Same revision
+( 89/129) origin/HEAD set to master
+( 89/129) origin/HEAD set to master
+( 90/129) origin/HEAD set to master
+( 91/129) origin/HEAD set to master
+( 96/129) [++++++++++++++------] neco-look
+( 89/129) origin/HEAD set to master
+Already up to date.
+( 90/129) origin/HEAD set to master
+( 91/129) origin/HEAD set to master
+( 89/129) origin/HEAD set to master
+Already up to date.
+
+( 89/129) |vim-textobj-user    | Same revision
+( 90/129) origin/HEAD set to master
+( 91/129) origin/HEAD set to master
+( 92/129) origin/HEAD set to master
+( 90/129) origin/HEAD set to master
+( 91/129) origin/HEAD set to master
+( 92/129) origin/HEAD set to master
+( 93/129) origin/HEAD set to master
+( 97/129) [+++++++++++++++-----] neosnippet-snippets
+( 90/129) origin/HEAD set to master
+( 91/129) origin/HEAD set to master
+( 92/129) origin/HEAD set to master
+( 93/129) origin/HEAD set to master
+( 94/129) origin/HEAD set to master
+( 90/129) origin/HEAD set to master
+Already up to date.
+( 91/129) origin/HEAD set to master
+( 92/129) origin/HEAD set to master
+( 93/129) origin/HEAD set to master
+( 94/129) origin/HEAD set to master
+( 90/129) origin/HEAD set to master
+Already up to date.
+
+( 90/129) |vim-markdown        | Same revision
+( 91/129) origin/HEAD set to master
+Already up to date.
+( 92/129) origin/HEAD set to master
+( 93/129) origin/HEAD set to master
+( 94/129) origin/HEAD set to master
+( 95/129) origin/HEAD set to master
+( 91/129) origin/HEAD set to master
+Already up to date.
+
+( 91/129) |denite.nvim         | Same revision
+( 92/129) origin/HEAD set to master
+Already up to date.
+
+( 92/129) |unite-perl-module.vim| Same revision
+( 93/129) origin/HEAD set to master
+Already up to date.
+( 94/129) origin/HEAD set to master
+( 95/129) origin/HEAD set to master
+( 98/129) [+++++++++++++++-----] vimfiler
+( 93/129) origin/HEAD set to master
+Already up to date.
+
+( 93/129) |thesaurus_query.vim | Same revision
+( 94/129) origin/HEAD set to master
+Already up to date.
+( 95/129) origin/HEAD set to master
+(100/129) [+++++++++++++++-----] bufexplorer
+( 94/129) origin/HEAD set to master
+Already up to date.
+
+( 94/129) |vim-textobj-indent  | Same revision
+( 95/129) origin/HEAD set to master
+(101/129) [+++++++++++++++-----] vim-textobj-multiblock
+( 95/129) origin/HEAD set to master
+Already up to date.
+( 96/129) origin/HEAD set to master
+(102/129) [+++++++++++++++-----] neco-syntax
+( 95/129) origin/HEAD set to master
+Already up to date.
+
+( 95/129) |vim-operator-replace| Same revision
+( 96/129) origin/HEAD set to master
+( 96/129) origin/HEAD set to master
+(103/129) [+++++++++++++++-----] neco-ghc
+( 96/129) origin/HEAD set to master
+( 97/129) origin/HEAD set to master
+( 96/129) origin/HEAD set to master
+( 97/129) origin/HEAD set to master
+( 96/129) origin/HEAD set to master
+( 97/129) origin/HEAD set to master
+( 96/129) origin/HEAD set to master
+( 97/129) origin/HEAD set to master
+( 96/129) origin/HEAD set to master
+Already up to date.
+( 97/129) origin/HEAD set to master
+( 96/129) origin/HEAD set to master
+Already up to date.
+
+( 96/129) |vim-textobj-lastpat | Same revision
+( 97/129) origin/HEAD set to master
+( 97/129) origin/HEAD set to master
+(104/129) [++++++++++++++++----] vim-neco-calc
+( 97/129) origin/HEAD set to master
+Already up to date.
+( 97/129) origin/HEAD set to master
+Already up to date.
+
+( 97/129) |neco-look           | Same revision
+(100/129) origin/HEAD set to master
+(105/129) [++++++++++++++++----] scvim
+( 98/129) origin/HEAD set to master
+(100/129) origin/HEAD set to master
+( 98/129) origin/HEAD set to master
+(100/129) origin/HEAD set to master
+(101/129) origin/HEAD set to master
+( 98/129) origin/HEAD set to master
+( 99/129) origin/HEAD set to master
+(100/129) origin/HEAD set to master
+(101/129) origin/HEAD set to master
+(102/129) origin/HEAD set to master
+( 98/129) origin/HEAD set to master
+( 99/129) origin/HEAD set to master
+(100/129) origin/HEAD set to master
+(101/129) origin/HEAD set to master
+(102/129) origin/HEAD set to master
+(103/129) origin/HEAD set to master
+( 98/129) origin/HEAD set to master
+( 99/129) origin/HEAD set to master
+(100/129) origin/HEAD set to master
+Already up to date.
+(101/129) origin/HEAD set to master
+(102/129) origin/HEAD set to master
+(103/129) origin/HEAD set to master
+( 98/129) origin/HEAD set to master
+( 99/129) origin/HEAD set to master
+(100/129) origin/HEAD set to master
+Already up to date.
+
+(100/129) |perldoc-vim         | Same revision
+(101/129) origin/HEAD set to master
+Already up to date.
+(102/129) origin/HEAD set to master
+(103/129) origin/HEAD set to master
+( 98/129) origin/HEAD set to master
+Already up to date.
+
+( 98/129) |neosnippet-snippets | Same revision
+( 99/129) origin/HEAD set to master
+Already up to date.
+(101/129) origin/HEAD set to master
+Already up to date.
+
+(101/129) |bufexplorer         | Same revision
+(102/129) origin/HEAD set to master
+Already up to date.
+
+(102/129) |vim-textobj-multiblock| Same revision
+(103/129) origin/HEAD set to master
+(106/129) [++++++++++++++++----] vim-grex
+( 99/129) origin/HEAD set to master
+Already up to date.
+
+( 99/129) |vimfiler            | Same revision
+(103/129) origin/HEAD set to master
+Already up to date.
+
+(103/129) |neco-syntax         | Same revision
+(104/129) origin/HEAD set to master
+(109/129) [++++++++++++++++----] cecutil
+(111/129) |vim                 | 
+(104/129) origin/HEAD set to master
+(105/129) origin/HEAD set to master
+(112/129) [+++++++++++++++++---] applescript.vim
+(104/129) origin/HEAD set to master
+(105/129) origin/HEAD set to master
+(104/129) origin/HEAD set to master
+Already up to date.
+(105/129) origin/HEAD set to master
+(104/129) origin/HEAD set to master
+Already up to date.
+
+(104/129) |neco-ghc            | Same revision
+(105/129) origin/HEAD set to master
+Already up to date.
+(105/129) origin/HEAD set to master
+Already up to date.
+
+(105/129) |vim-neco-calc       | Same revision
+(113/129) [+++++++++++++++++---] bitly.vim
+(114/129) [+++++++++++++++++---] w3m.vim
+(106/129) origin/HEAD set to master
+(106/129) origin/HEAD set to master
+(106/129) origin/HEAD set to master
+(107/129) origin/HEAD set to master
+(106/129) origin/HEAD set to master
+(107/129) origin/HEAD set to master
+(106/129) origin/HEAD set to master
+(107/129) origin/HEAD set to master
+(106/129) origin/HEAD set to master
+(107/129) origin/HEAD set to master
+(109/129) origin/HEAD set to master
+(106/129) origin/HEAD set to master
+(107/129) origin/HEAD set to master
+(108/129) origin/HEAD set to master
+(109/129) origin/HEAD set to master
+(110/129) origin/HEAD set to master
+(112/129) origin/HEAD set to master
+(106/129) origin/HEAD set to master
+Already up to date.
+
+(106/129) |scvim               | Same revision
+(107/129) origin/HEAD set to master
+(108/129) origin/HEAD set to master
+(109/129) origin/HEAD set to master
+(110/129) origin/HEAD set to master
+(112/129) origin/HEAD set to master
+(107/129) origin/HEAD set to master
+Already up to date.
+
+(107/129) |vim-grex            | Same revision
+(108/129) origin/HEAD set to master
+(109/129) origin/HEAD set to master
+(110/129) origin/HEAD set to master
+(112/129) origin/HEAD set to master
+(115/129) [+++++++++++++++++---] vim-textobj-url
+(108/129) origin/HEAD set to master
+(109/129) origin/HEAD set to master
+(110/129) origin/HEAD set to master
+(112/129) origin/HEAD set to master
+(113/129) origin/HEAD set to master
+(116/129) [+++++++++++++++++---] eblook.vim
+(108/129) origin/HEAD set to master
+(109/129) origin/HEAD set to master
+(110/129) origin/HEAD set to master
+Already up to date.
+(112/129) origin/HEAD set to master
+Already up to date.
+(113/129) origin/HEAD set to master
+(114/129) origin/HEAD set to master
+(108/129) origin/HEAD set to master
+Already up to date.
+(109/129) origin/HEAD set to master
+Already up to date.
+
+(109/129) |lightline.vim       | Same revision
+(110/129) origin/HEAD set to master
+Already up to date.
+
+(110/129) |cecutil             | Same revision
+(112/129) origin/HEAD set to master
+Already up to date.
+
+(112/129) |vim-operator-exec_command| Same revision
+(113/129) origin/HEAD set to master
+(114/129) origin/HEAD set to master
+(108/129) origin/HEAD set to master
+Already up to date.
+
+(108/129) |latex-box           | Same revision
+(113/129) origin/HEAD set to master
+(114/129) origin/HEAD set to master
+(119/129) [++++++++++++++++++--] vim-operator-siege
+(113/129) origin/HEAD set to master
+Already up to date.
+
+(113/129) |applescript.vim     | Same revision
+(114/129) origin/HEAD set to master
+(120/129) [++++++++++++++++++--] vim-unimpaired
+(114/129) origin/HEAD set to master
+Already up to date.
+(121/129) [++++++++++++++++++--] vim-textobj-line
+(114/129) origin/HEAD set to master
+Already up to date.
+
+(114/129) |bitly.vim           | Same revision
+(122/129) [++++++++++++++++++--] unite-help
+(115/129) origin/HEAD set to master
+(115/129) origin/HEAD set to master
+(115/129) origin/HEAD set to master
+(116/129) origin/HEAD set to master
+(115/129) origin/HEAD set to master
+(116/129) origin/HEAD set to master
+(115/129) origin/HEAD set to master
+(116/129) origin/HEAD set to master
+(115/129) origin/HEAD set to master
+(116/129) origin/HEAD set to master
+(115/129) origin/HEAD set to master
+(116/129) origin/HEAD set to master
+(118/129) origin/HEAD set to master
+(115/129) origin/HEAD set to master
+Already up to date.
+(116/129) origin/HEAD set to master
+(118/129) origin/HEAD set to master
+(119/129) origin/HEAD set to master
+(115/129) origin/HEAD set to master
+Already up to date.
+
+(115/129) |w3m.vim             | Same revision
+(116/129) origin/HEAD set to master
+Already up to date.
+(117/129) origin/HEAD set to master
+(118/129) origin/HEAD set to master
+(119/129) origin/HEAD set to master
+(116/129) origin/HEAD set to master
+Already up to date.
+
+(116/129) |vim-textobj-url     | Same revision
+(117/129) origin/HEAD set to master
+(118/129) origin/HEAD set to master
+(119/129) origin/HEAD set to master
+(120/129) origin/HEAD set to master
+(123/129) [+++++++++++++++++++-] neomru.vim
+(117/129) origin/HEAD set to master
+(118/129) origin/HEAD set to master
+(119/129) origin/HEAD set to master
+(120/129) origin/HEAD set to master
+(121/129) origin/HEAD set to master
+(122/129) origin/HEAD set to master
+(124/129) [+++++++++++++++++++-] vim-indentwise
+(117/129) origin/HEAD set to master
+(118/129) origin/HEAD set to master
+Already up to date.
+(119/129) origin/HEAD set to master
+(120/129) origin/HEAD set to master
+(121/129) origin/HEAD set to master
+(122/129) origin/HEAD set to master
+(117/129) origin/HEAD set to master
+(118/129) origin/HEAD set to master
+Already up to date.
+
+(118/129) |unite-itunes        | Same revision
+(119/129) origin/HEAD set to master
+Already up to date.
+
+(119/129) |vim-hug-neovim-rpc  | Same revision
+(120/129) origin/HEAD set to master
+(121/129) origin/HEAD set to master
+(122/129) origin/HEAD set to master
+(117/129) origin/HEAD set to master
+Already up to date.
+
+(117/129) |eblook.vim          | Same revision
+(120/129) origin/HEAD set to master
+Already up to date.
+
+(120/129) |vim-operator-siege  | Same revision
+(121/129) origin/HEAD set to master
+(122/129) origin/HEAD set to master
+(126/129) [+++++++++++++++++++-] favstar-vim
+(121/129) origin/HEAD set to master
+(122/129) origin/HEAD set to master
+Already up to date.
+
+(122/129) |vim-textobj-line    | Same revision
+(128/129) [+++++++++++++++++++-] unite-outline
+(121/129) origin/HEAD set to master
+Already up to date.
+(121/129) origin/HEAD set to master
+Already up to date.
+
+(121/129) |vim-unimpaired      | Same revision
+(123/129) origin/HEAD set to master
+(123/129) origin/HEAD set to master
+(123/129) origin/HEAD set to master
+(124/129) origin/HEAD set to master
+(123/129) origin/HEAD set to master
+(124/129) origin/HEAD set to master
+(123/129) origin/HEAD set to master
+(124/129) origin/HEAD set to master
+(123/129) origin/HEAD set to master
+(124/129) origin/HEAD set to master
+(123/129) origin/HEAD set to master
+(124/129) origin/HEAD set to master
+(123/129) origin/HEAD set to master
+Already up to date.
+(124/129) origin/HEAD set to master
+(125/129) origin/HEAD set to master
+(126/129) origin/HEAD set to master
+(123/129) origin/HEAD set to master
+Already up to date.
+
+(123/129) |unite-help          | Same revision
+(124/129) origin/HEAD set to master
+Already up to date.
+(125/129) origin/HEAD set to master
+(126/129) origin/HEAD set to master
+(124/129) origin/HEAD set to master
+Already up to date.
+
+(124/129) |neomru.vim          | Same revision
+(125/129) origin/HEAD set to master
+(126/129) origin/HEAD set to master
+(127/129) origin/HEAD set to master
+(125/129) origin/HEAD set to master
+(126/129) origin/HEAD set to master
+(127/129) origin/HEAD set to master
+(128/129) origin/HEAD set to master
+(125/129) origin/HEAD set to master
+(126/129) origin/HEAD set to master
+(127/129) origin/HEAD set to master
+(128/129) origin/HEAD set to master
+(129/129) origin/HEAD set to master
+(125/129) origin/HEAD set to master
+Already up to date.
+(126/129) origin/HEAD set to master
+(127/129) origin/HEAD set to master
+(128/129) origin/HEAD set to master
+(129/129) origin/HEAD set to master
+(125/129) origin/HEAD set to master
+Already up to date.
+
+(125/129) |vim-indentwise      | Same revision
+(126/129) origin/HEAD set to master
+Already up to date.
+
+(126/129) |neco-vim            | Same revision
+(127/129) origin/HEAD set to master
+(128/129) origin/HEAD set to master
+(129/129) origin/HEAD set to master
+(127/129) origin/HEAD set to master
+Already up to date.
+
+(127/129) |favstar-vim         | Same revision
+(128/129) origin/HEAD set to master
+Already up to date.
+(129/129) origin/HEAD set to master
+(128/129) origin/HEAD set to master
+Already up to date.
+
+(128/129) |webapi-vim          | Same revision
+(129/129) origin/HEAD set to master
+(129/129) origin/HEAD set to master
+Already up to date.
+(129/129) origin/HEAD set to master
+Already up to date.
+
+(129/129) |unite-outline       | Same revision
+Runtimepath updated: (2021/01/04 06:05:16)
+Done: (2021/01/04 06:05:16)

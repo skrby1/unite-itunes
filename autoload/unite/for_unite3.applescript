@@ -38,7 +38,7 @@ on run argv
         set v_an to album of i
         set v_tn to 0
         if item 1 of l_idx is not 0 then
-          repeat v_cnt times
+          repeat (v_cdn - 1) times
             set l_tmp to (tracks whose album is v_an and disc number is v_cnt)
             set v_tn to v_tn + (track count of item 1 of l_tmp)
             set v_cnt to v_cnt - 1
@@ -56,6 +56,7 @@ on run argv
     repeat with j in l_idx
       --set item j of l_album_t to location of (item v_cnt of l_album)
       set item (contents of j) of l_album_t to (item v_cnt of l_album)
+      --set item v_cnt of l_album_t to (item v_cnt of l_album)
       set v_cnt to v_cnt + 1
     end repeat
     --add l_album_t to playlist "Unite"

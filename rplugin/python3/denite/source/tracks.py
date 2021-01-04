@@ -59,6 +59,7 @@ class Source(Base):
                 candidate['plname'] = value[5]
                 candidate['ptime'] = value[6]
                 candidate['sartist'] = value[7]
+                candidate['discno'] = value[8]
                 candidate['plflag'] = plflag
                 moji1 = self.adjust_str(value[0], 1.27)
                 moji2 = self.adjust_str(value[1], 1.13)
@@ -70,11 +71,11 @@ class Source(Base):
                 self.vim.command('redraw! | echo \'nothing found!!\'')
                 return []
 
-        if value[8] == "playlist":
+        if value[9] == "playlist":
             self.sorters = ['sorter/playlist']
-        elif value[8] == 'title' or value[8] == 'year':
+        elif value[9] == 'title' or value[8] == 'year':
             self.sorters = ['sorter/artists']
-        elif value[8] == 'time':
+        elif value[9] == 'time':
             self.sorters = ['sorter/times']
 
         return candidates

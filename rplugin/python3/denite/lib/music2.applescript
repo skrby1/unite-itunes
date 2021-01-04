@@ -57,7 +57,7 @@ on run argv as text
       else
         set v_sartist to artist of i
       end if
-      set v_temp to v_s & name of i & tab & album of i & tab & artist of i & tab & (track number of i) as text & tab & (id of i) as text & tab & argv & tab & (duration of i) as text & tab & v_sartist & tab & v_mode
+      set v_temp to v_s & name of i & tab & album of i & tab & artist of i & tab & (track number of i) as text & tab & (id of i) as text & tab & argv & tab & (duration of i) as text & tab & v_sartist & tab & (disc number of i) as text & tab & v_mode
       if v_flag = 0 then
         set l_data to v_temp
         set v_flag to 1

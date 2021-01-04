@@ -34,8 +34,10 @@ function! s:Sort1(i1, i2)
   let n2 = a:i2.source__track.sartist
   let a1 = a:i1.source__track.album
   let a2 = a:i2.source__track.album
+  let d1 = a:i1.source__track.discno
+  let d2 = a:i2.source__track.discno
   "return a1 > a2 ? 1 : (a1 == a2 ? (n1 > n2 ? 1 : (n1 == n2 ? (id1 > id2 ? 1 : -1) : -1)) : -1)
-  return a1 > a2 ? 1 : (a1 == a2 ? (t1 > t2 ? 1 : (t1 == t2 ? (n1 > n2 ? 1 : -1) : -1)) : -1)
+  return a1 > a2 ? 1 : (a1 == a2 ? (d1 > d2 ? 1 : (d1 == d2 ? (t1 > t2 ? 1 : (t1 == t2 ? (n1 > n2 ? 1 : -1) : -1)) : -1)) : -1)
 endfunction
 
 function! s:uifilter.filter(candidates, context)
@@ -139,6 +141,7 @@ function! s:unite_itunes.gather_candidates(args, context) abort
     \ "id":     l:v[4],
     \ "argv":   l:v[5],
     \ "sartist":l:v[6],
+    \ "discno": l:v[7],
     \ })
   endfor
   return map(copy(s:songs), '{
@@ -150,6 +153,7 @@ function! s:unite_itunes.gather_candidates(args, context) abort
   \ "action__play_id": v:val.id,
   \ "action__play_plname": v:val.argv,
   \ "action__play_sartist": v:val.sartist,
+  \ "action__play_discno": v:val.discno,
   \ "source__track": v:val,
   \ }')
 endfunction

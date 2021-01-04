@@ -11,7 +11,8 @@ class Filter(Base):
         self.description = 'sorter for title and year)'
 
     def filter(self, context: UserContext) -> Candidates:
-        return sorted(sorted(sorted(context['candidates'],
+        return sorted(sorted(sorted(sorted(context['candidates'],
             key=lambda a: int(a['tkno'])),
-            key=lambda b: str(b['album']).lower()),
-            key=lambda c: str(c['sartist']).lower())
+            key=lambda b: int(b['discno'])),
+            key=lambda c: str(c['album']).lower()),
+            key=lambda d: str(d['sartist']).lower())
