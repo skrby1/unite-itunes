@@ -64,7 +64,7 @@ on run argv
       set comment of k to (comment of k) & "Unite"
       delay 0.3
     end repeat
-    delay (v_plt * 0.20) + ((count items of l_album_t) * 0.30) + 0.3
+    delay (v_plt * 0.25) + ((count items of l_album_t) * 0.35) + 0.3
     reveal track 1 of playlist "Unite"
     play playlist "Unite"
   end tell
