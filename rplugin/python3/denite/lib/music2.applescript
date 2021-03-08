@@ -1,32 +1,34 @@
 on run argv as text
+  set v_argv to replaceText(argv, "@wq@", "\"")
+  display dialog v_argv
   set l_props to {}
   set v_mode to ""
   tell application "Music"
     set shuffle enabled to false
-    if 2nd character of argv is not "|"
-      set l_props to tracks of playlist argv
+    if 2nd character of v_argv is not "|"
+      set l_props to tracks of playlist v_argv
       set v_mode to "playlist"
-    else if 1st character of argv is "n"
-      set v_sw to setSW(argv) of me
+    else if 1st character of v_argv is "n"
+      set v_sw to setSW(v_argv) of me
       --set l_props to tracks whose (artist contains v_sw or album artist contains v_sw)
       set l_props to search playlist 1 for v_sw only artists
       set v_mode to "name"
-    else if 1st character of argv is "a"
-      set v_sw to setSW(argv) of me
+    else if 1st character of v_argv is "a"
+      set v_sw to setSW(v_argv) of me
       --set l_props to tracks whose album contains v_sw
       set l_props to search playlist 1 for v_sw only albums
       set v_mode to "album"
-    else if 1st character of argv is "t"
-      set v_sw to setSW(argv) of me
+    else if 1st character of v_argv is "t"
+      set v_sw to setSW(v_argv) of me
       --set l_props to tracks whose name contains v_sw
       set l_props to search playlist 1 for v_sw only names
       set v_mode to "title"
-    else if 1st character of argv is "y"
-      set v_sw to setSW(argv) of me
+    else if 1st character of v_argv is "y"
+      set v_sw to setSW(v_argv) of me
       set l_props to tracks whose year = v_sw as integer and media kind of it is song
       set v_mode to "year"
-    else if 1st character of argv is ">" or 1st character of argv is "<" then
-      set v_sw to setSW(argv) of me
+    else if 1st character of v_argv is ">" or 1st character of v_argv is "<" then
+      set v_sw to setSW(v_argv) of me
       set v_td to AppleScript's text item delimiters
       set AppleScript's text item delimiters to "-"
       set l_t to text items of v_sw
@@ -57,7 +59,7 @@ on run argv as text
       else
         set v_sartist to artist of i
       end if
-      set v_temp to v_s & name of i & tab & album of i & tab & artist of i & tab & (track number of i) as text & tab & (id of i) as text & tab & argv & tab & (duration of i) as text & tab & v_sartist & tab & (disc number of i) as text & tab & v_mode
+      set v_temp to v_s & name of i & tab & album of i & tab & artist of i & tab & (track number of i) as text & tab & (id of i) as text & tab & v_argv & tab & (duration of i) as text & tab & v_sartist & tab & (disc number of i) as text & tab & v_mode
       if v_flag = 0 then
         set l_data to v_temp
         set v_flag to 1
@@ -78,4 +80,14 @@ on setSW(sw)
   set v_temp to l_temp as string
   set AppleScript's text item delimiters to v_td
   return v_temp
+end
+
+on replaceText(theText, serchStr, replaceStr)
+  set tmp to AppleScript's text item delimiters
+  set AppleScript's text item delimiters to serchStr
+  set theList to every text item of theText
+  set AppleScript's text item delimiters to replaceStr
+  set theText to theList as string
+  set AppleScript's text item delimiters to tmp
+  return theText
 end

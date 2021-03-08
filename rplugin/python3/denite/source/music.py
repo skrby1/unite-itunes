@@ -69,6 +69,8 @@ class Source(Base):
                 self.vim.command('redraw!')
                 return []
             elif act == 'a' or act == 'n' or act == 'y' or act == 't' or act == '>' or act == '<':
+                for (idx, arg) in enumerate(list(context['args'])):
+                    context['args'][idx] = arg.replace("'", "\\\'").replace('"', "@wq@")
                 tracks_args = 'Denite -no-empty -buffer-name=tracks tracks:' \
                         + ':'.join(list(context['args']))
                 self.vim.command(tracks_args)
