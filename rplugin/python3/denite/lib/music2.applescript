@@ -1,6 +1,6 @@
 on run argv as text
   set v_argv to replaceText(argv, "@wq@", "\"")
-  display dialog v_argv
+  --display dialog v_argv
   set l_props to {}
   set v_mode to ""
   tell application "Music"

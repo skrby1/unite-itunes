@@ -174,6 +174,14 @@ Behavior is same for Unite source.
     :Denite -no-empty -buffer-name=music music:< or >:[MINIMUM_TIME]-[MAXIMUM_TIME]
 
 
+!! If you want to use single quote in args, Please add backslash before single quote.  
+
+    :Denite -no-empty -buffer-name=music music:t:I\'ll_be
+
+!! If you want to use double quote in args, Please add two backslashes before double quote.
+
+    :Denite -no-empty -buffer-name=music music:t:12\\"
+
 Detailed usage
 -----
 [Please refer to this link](http://skrby1.com/?p=125)
