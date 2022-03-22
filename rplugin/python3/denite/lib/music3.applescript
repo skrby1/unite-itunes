@@ -76,7 +76,7 @@ on run argv
       delay 0.30
     end repeat
     delay (v_plt * 0.25) + ((count items of l_album_t) * 0.35) + 0.30
-    reveal track 1 of playlist "Vim"
+    --reveal track 1 of playlist "Vim"
     play playlist "Vim"
   end tell
 end run
