@@ -1,0 +1,471 @@
+Update started: (2022/04/21 18:27:19)
+(  8/124) [+-------------------] winresizer
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+(  1/124) |deoplete-swift      | Same revision
+(  2/124) |vim-operator-sort   | Same revision
+Already up to date.
+Already up to date.
+(  8/124) |vim-textobj-entire  | Same revision
+( 10/124) [+-------------------] vim-operator-shaberu
+Already up to date.
+Already up to date.
+( 11/124) |vim-operator-shaberu| 
+(  3/124) |vim-metarw          | Same revision
+(  4/124) |foxdot.vim          | Same revision
+( 12/124) [+-------------------] VimCalc3
+(  5/124) |vimshell            | Same revision
+(  6/124) |deoplete-zsh        | Same revision
+(  7/124) |vim-maktaba         | Same revision
+( 14/124) [++------------------] vim-operator-mdurl
+( 17/124) [++------------------] neoinclude.vim
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+Already up to date.
+Already up to date.
+(  9/124) |winresizer          | Same revision
+Already up to date.
+( 10/124) |vim-selection       | Same revision
+( 18/124) [++------------------] vim-visual-multi
+Already up to date.
+Already up to date.
+( 12/124) |vim-ref             | Same revision
+( 19/124) [+++-----------------] vim-jplus
+Already up to date.
+( 13/124) |VimCalc3            | Same revision
+( 15/124) |vim-operator-mdurl  | Same revision
+( 20/124) [+++-----------------] fzf.vim
+Already up to date.
+origin/HEAD set to master
+( 16/124) |dash.vim            | Same revision
+( 22/124) [+++-----------------] vim-migemo
+( 17/124) |rargs.vim           | Same revision
+( 23/124) [+++-----------------] vim-operator-filled-with-blank
+( 24/124) [+++-----------------] ale
+Already up to date.
+( 14/124) |dein.vim            | Same revision
+( 25/124) [++++----------------] autocomplete-flow
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+Already up to date.
+( 18/124) |neoinclude.vim      | Same revision
+( 26/124) [++++----------------] sudo.vim
+origin/HEAD set to master
+Already up to date.
+( 19/124) |vim-visual-multi    | Same revision
+( 27/124) [++++----------------] perlomni.vim
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+( 20/124) |vim-jplus           | Same revision
+( 23/124) |vim-migemo          | Same revision
+( 28/124) [++++----------------] nvim-yarp
+Already up to date.
+origin/HEAD set to master
+( 21/124) |fzf.vim             | Same revision
+( 22/124) |vim-operator-ag     | Same revision
+( 29/124) [++++----------------] vim-textobj-between
+( 24/124) |vim-operator-filled-with-blank| Same revision
+( 31/124) [+++++---------------] vim-processing
+( 32/124) [+++++---------------] magnum.vim
+origin/HEAD set to master
+Already up to date.
+( 25/124) |ale                 | Same revision
+origin/HEAD set to master
+( 33/124) [+++++---------------] vim-textobj-indent
+origin/HEAD set to master
+origin/HEAD set to master
+Already up to date.
+origin/HEAD set to master
+origin/HEAD set to master
+( 26/124) |autocomplete-flow   | Same revision
+origin/HEAD set to master
+Already up to date.
+( 34/124) [+++++---------------] vim-operator-sequence
+( 27/124) |sudo.vim            | Same revision
+( 35/124) [+++++---------------] memolist.vim
+Already up to date.
+Already up to date.
+Already up to date.
+( 28/124) |perlomni.vim        | Same revision
+Already up to date.
+( 29/124) |nvim-yarp           | Same revision
+( 36/124) [+++++---------------] tabular
+origin/HEAD set to master
+( 30/124) |vim-textobj-between | Same revision
+( 32/124) |vim-processing      | Same revision
+( 37/124) [+++++---------------] vim-operator-evalf
+Already up to date.
+( 39/124) [++++++--------------] previm
+( 31/124) |vim-easymotion      | Same revision
+( 40/124) [++++++--------------] julia-vim
+Already up to date.
+origin/HEAD set to master
+( 33/124) |magnum.vim          | Same revision
+( 41/124) [++++++--------------] vim-submode
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+Already up to date.
+origin/HEAD set to master
+( 35/124) |vim-operator-sequence| Same revision
+Already up to date.
+( 42/124) [++++++--------------] Nvim-R
+( 34/124) |vim-textobj-indent  | Same revision
+Already up to date.
+( 43/124) [++++++--------------] scratch.vim
+( 36/124) |memolist.vim        | Same revision
+origin/HEAD set to master
+Already up to date.
+( 44/124) [+++++++-------------] vim-ref-R
+origin/HEAD set to master
+Already up to date.
+( 37/124) |tabular             | Same revision
+( 38/124) |vim-operator-evalf  | Same revision
+( 45/124) [+++++++-------------] vim-vis
+Already up to date.
+( 46/124) [+++++++-------------] vim-javascript
+( 39/124) |vim-indent-guides   | Same revision
+( 47/124) [+++++++-------------] open-browser.vim
+Already up to date.
+( 40/124) |previm              | Same revision
+origin/HEAD set to master
+( 48/124) [+++++++-------------] vinarise.vim
+Already up to date.
+( 41/124) |julia-vim           | Same revision
+( 49/124) [+++++++-------------] vim-trailing-whitespace
+origin/HEAD set to master
+Already up to date.
+origin/HEAD set to master
+origin/HEAD set to master
+( 42/124) |vim-submode         | Same revision
+( 50/124) [++++++++------------] vim-indentwise
+Already up to date.
+origin/HEAD set to master
+origin/HEAD set to master
+( 44/124) |scratch.vim         | Same revision
+origin/HEAD set to master
+( 51/124) [++++++++------------] vim-metarw-http
+Already up to date.
+Already up to date.
+( 45/124) |vim-ref-R           | Same revision
+origin/HEAD set to master
+( 46/124) |vim-vis             | Same revision
+( 52/124) [++++++++------------] vim-wwwsearch
+Already up to date.
+( 53/124) [++++++++------------] YankRing.vim
+Already up to date.
+Already up to date.
+( 43/124) |Nvim-R              | Same revision
+( 48/124) |open-browser.vim    | Same revision
+( 54/124) [++++++++------------] vim-quickrun
+Already up to date.
+( 47/124) |vim-javascript      | Same revision
+( 55/124) [++++++++------------] vim-perl
+( 49/124) |vinarise.vim        | Same revision
+( 56/124) [+++++++++-----------] vim-textobj-user
+origin/HEAD set to master
+( 57/124) [+++++++++-----------] vimproc.vim
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+Already up to date.
+Already up to date.
+( 50/124) |vim-trailing-whitespace| Same revision
+origin/HEAD set to master
+( 51/124) |vim-indentwise      | Same revision
+( 58/124) [+++++++++-----------] Align
+Already up to date.
+( 59/124) [+++++++++-----------] vim-operator-user
+origin/HEAD set to master
+origin/HEAD set to dev
+( 52/124) |vim-metarw-http     | Same revision
+origin/HEAD set to master
+Already up to date.
+( 60/124) [+++++++++-----------] textobj-motionmotion.vim
+Already up to date.
+( 53/124) |vim-wwwsearch       | Same revision
+( 54/124) |YankRing.vim        | Same revision
+( 61/124) [+++++++++-----------] vim-operator-surround
+Already up to date.
+( 62/124) [++++++++++----------] vim-radical
+Already up to date.
+Already up to date.
+( 55/124) |vim-quickrun        | Same revision
+( 56/124) |vim-perl            | Same revision
+( 63/124) [++++++++++----------] unite.vim
+( 57/124) |vim-textobj-user    | Same revision
+( 64/124) [++++++++++----------] ref-processing-vim
+origin/HEAD set to master
+origin/HEAD set to master
+( 65/124) [++++++++++----------] vim-textobj-fold
+origin/HEAD set to master
+origin/HEAD set to master
+Already up to date.
+Already up to date.
+origin/HEAD set to master
+( 58/124) |vimproc.vim         | Same revision
+( 59/124) |Align               | Same revision
+( 66/124) [++++++++++----------] emmet-vim
+Already up to date.
+( 67/124) [++++++++++----------] vim-textobj-enclosedsyntax
+origin/HEAD set to master
+( 60/124) |vim-operator-user   | Same revision
+Already up to date.
+( 68/124) [++++++++++----------] vim-latex-live-preview
+origin/HEAD set to master
+origin/HEAD set to master
+Already up to date.
+( 61/124) |textobj-motionmotion.vim| Same revision
+( 62/124) |vim-operator-surround| Same revision
+( 69/124) [+++++++++++---------] vim-swift-format
+Already up to date.
+( 70/124) [+++++++++++---------] takt.vim
+( 63/124) |vim-radical         | Same revision
+Already up to date.
+( 71/124) |takt.vim            | 
+( 72/124) [+++++++++++---------] perldoc-vim
+Already up to date.
+origin/HEAD set to master
+( 65/124) |ref-processing-vim  | Same revision
+( 64/124) |unite.vim           | Same revision
+( 73/124) [+++++++++++---------] vim-visualstar
+origin/HEAD set to master
+( 74/124) [+++++++++++---------] vim-qfreplace
+origin/HEAD set to master
+Already up to date.
+origin/HEAD set to master
+( 66/124) |vim-textobj-fold    | Same revision
+origin/HEAD set to master
+Already up to date.
+( 75/124) [++++++++++++--------] cecutil
+Already up to date.
+( 67/124) |emmet-vim           | Same revision
+( 68/124) |vim-textobj-enclosedsyntax| Same revision
+origin/HEAD set to master
+( 77/124) [++++++++++++--------] deoplete.nvim
+origin/HEAD set to master
+Already up to date.
+Already up to date.
+( 69/124) |vim-latex-live-preview| Same revision
+origin/HEAD set to master
+( 70/124) |vim-swift-format    | Same revision
+( 78/124) [++++++++++++--------] neosnippet.vim
+( 79/124) [++++++++++++--------] vim-showmarks
+Already up to date.
+Already up to date.
+origin/HEAD set to master
+( 72/124) |vim-tidal           | Same revision
+( 73/124) |perldoc-vim         | Same revision
+( 80/124) [++++++++++++--------] vim-operator-perl
+Already up to date.
+( 81/124) [+++++++++++++-------] vim-textobj-function
+( 74/124) |vim-visualstar      | Same revision
+origin/HEAD set to master
+origin/HEAD set to master
+( 82/124) [+++++++++++++-------] auto-ctags.vim
+Already up to date.
+( 75/124) |vim-qfreplace       | Same revision
+origin/HEAD set to master
+( 83/124) [+++++++++++++-------] twitvim
+Already up to date.
+origin/HEAD set to master
+Already up to date.
+( 77/124) |vim-crunch          | Same revision
+origin/HEAD set to master
+( 76/124) |cecutil             | Same revision
+( 84/124) [+++++++++++++-------] vim-pandoc
+( 85/124) [+++++++++++++-------] vim-textobj-sigil
+origin/HEAD set to master
+Already up to date.
+origin/HEAD set to master
+Already up to date.
+( 78/124) |deoplete.nvim       | Same revision
+Already up to date.
+( 79/124) |neosnippet.vim      | Same revision
+( 86/124) [+++++++++++++-------] vim-pandoc-syntax
+( 80/124) |vim-showmarks       | Same revision
+( 87/124) [++++++++++++++------] shaberu.vim
+origin/HEAD set to master
+( 88/124) [++++++++++++++------] vim-markdown
+Already up to date.
+Already up to date.
+( 81/124) |vim-operator-perl   | Same revision
+( 82/124) |vim-textobj-function| Same revision
+( 89/124) [++++++++++++++------] denite.nvim
+origin/HEAD set to master
+( 90/124) [++++++++++++++------] thesaurus_query.vim
+Already up to date.
+( 83/124) |auto-ctags.vim      | Same revision
+( 91/124) [++++++++++++++------] im_control.vim
+origin/HEAD set to master
+Already up to date.
+origin/HEAD set to master
+origin/HEAD set to master
+( 84/124) |twitvim             | Same revision
+( 92/124) [++++++++++++++------] vim-operator-replace
+Already up to date.
+( 86/124) |vim-textobj-sigil   | Same revision
+origin/HEAD set to master
+Already up to date.
+( 93/124) [+++++++++++++++-----] vim-textobj-lastpat
+Already up to date.
+origin/HEAD set to master
+( 87/124) |vim-pandoc-syntax   | Same revision
+( 88/124) |shaberu.vim         | Same revision
+( 94/124) [+++++++++++++++-----] neco-look
+origin/HEAD set to master
+( 95/124) [+++++++++++++++-----] neosnippet-snippets
+Already up to date.
+origin/HEAD set to master
+Already up to date.
+( 89/124) |vim-markdown        | Same revision
+Already up to date.
+( 96/124) [+++++++++++++++-----] vimdoc-ja
+( 90/124) |denite.nvim         | Same revision
+( 91/124) |thesaurus_query.vim | Same revision
+( 97/124) [+++++++++++++++-----] bufexplorer
+origin/HEAD set to master
+( 98/124) [+++++++++++++++-----] vim-textobj-multiblock
+Already up to date.
+origin/HEAD set to master
+( 92/124) |im_control.vim      | Same revision
+origin/HEAD set to master
+( 99/124) [+++++++++++++++-----] neco-syntax
+Already up to date.
+( 93/124) |vim-operator-replace| Same revision
+Already up to date.
+(100/124) [++++++++++++++++----] neco-ghc
+Already up to date.
+( 94/124) |vim-textobj-lastpat | Same revision
+origin/HEAD set to master
+( 95/124) |neco-look           | Same revision
+(101/124) [++++++++++++++++----] vim-neco-calc
+origin/HEAD set to master
+origin/HEAD set to master
+(102/124) [++++++++++++++++----] scvim
+origin/HEAD set to master
+origin/HEAD set to master
+Already up to date.
+Already up to date.
+Already up to date.
+( 96/124) |neosnippet-snippets | Same revision
+( 85/124) |vim-pandoc          | Same revision
+( 98/124) |bufexplorer         | Same revision
+(103/124) [++++++++++++++++----] vim-grex
+Already up to date.
+origin/HEAD set to master
+(105/124) [++++++++++++++++----] lightline.vim
+Already up to date.
+( 97/124) |vimdoc-ja           | Same revision
+origin/HEAD set to master
+(106/124) [+++++++++++++++++---] unite-itunes
+origin/HEAD set to master
+( 99/124) |vim-textobj-multiblock| Same revision
+(107/124) [+++++++++++++++++---] vim
+Already up to date.
+(100/124) |neco-syntax         | Same revision
+Already up to date.
+(108/124) |vim                 | 
+(109/124) [+++++++++++++++++---] applescript.vim
+Already up to date.
+(101/124) |neco-ghc            | Same revision
+(102/124) |vim-neco-calc       | Same revision
+(110/124) [+++++++++++++++++---] textobj-mbboundary.vim
+origin/HEAD set to main
+(111/124) [+++++++++++++++++---] w3m.vim
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+Already up to date.
+origin/HEAD set to master
+(103/124) |scvim               | Same revision
+Already up to date.
+(112/124) [++++++++++++++++++--] vim-textobj-url
+Already up to date.
+Already up to date.
+origin/HEAD set to master
+origin/HEAD set to master
+(105/124) |latex-box           | Same revision
+Already up to date.
+(113/124) [++++++++++++++++++--] eblook.vim
+origin/HEAD set to master
+(107/124) |unite-itunes        | Same revision
+(114/124) [++++++++++++++++++--] vim-hug-neovim-rpc
+Already up to date.
+Already up to date.
+(109/124) |vim-operator-exec_command| Same revision
+Already up to date.
+(110/124) |applescript.vim     | Same revision
+(115/124) [++++++++++++++++++--] vim-operator-siege
+origin/HEAD set to master
+(116/124) [++++++++++++++++++--] vim-unimpaired
+(111/124) |textobj-mbboundary.vim| Same revision
+(104/124) |vim-grex            | Same revision
+(117/124) [++++++++++++++++++--] vimfiler
+(106/124) |lightline.vim       | Same revision
+(118/124) [+++++++++++++++++++-] vim-textobj-line
+origin/HEAD set to master
+(119/124) [+++++++++++++++++++-] neomru.vim
+Already up to date.
+(112/124) |w3m.vim             | Same revision
+origin/HEAD set to master
+(120/124) [+++++++++++++++++++-] deoplete-dict
+Already up to date.
+origin/HEAD set to master
+(113/124) |vim-textobj-url     | Same revision
+origin/HEAD set to master
+(121/124) |deoplete-dict       | 
+(122/124) [+++++++++++++++++++-] webapi-vim
+Already up to date.
+origin/HEAD set to master
+origin/HEAD set to master
+origin/HEAD set to master
+(114/124) |eblook.vim          | Same revision
+Already up to date.
+(123/124) [+++++++++++++++++++-] vim-sonic-pi
+Already up to date.
+(115/124) |vim-hug-neovim-rpc  | Same revision
+origin/HEAD set to master
+(116/124) |vim-operator-siege  | Same revision
+Already up to date.
+Already up to date.
+Already up to date.
+(118/124) |vimfiler            | Same revision
+(117/124) |vim-unimpaired      | Same revision
+(119/124) |vim-textobj-line    | Same revision
+Already up to date.
+origin/HEAD set to master
+(120/124) |neomru.vim          | Same revision
+origin/HEAD set to master
+origin/HEAD set to main
+Already up to date.
+Already up to date.
+(122/124) |neco-vim            | Same revision
+(123/124) |webapi-vim          | Same revision
+Already up to date.
+(124/124) |vim-sonic-pi        | Same revision
+Updated plugins:
+
+Done: (2022/04/21 18:27:51)

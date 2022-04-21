@@ -34,7 +34,7 @@ class Kind(Base):
     def action_add_next(self, context) -> None:
         target = context['targets'][0]
         name = target['name'].replace('[s] ', '').replace('[S] ', '').replace('[c] ', '').replace('"', '\\"')
-        cmd = 'osascript ../lib/add_track_to_next.applescript "' + name + '"'
+        cmd = 'osascript ~/.cache/dein/repos/github.com/skrby1/unite-itunes/rplugin/python3/denite/lib/add_track_to_next.applescript "' + name + '"'
         try:
             run(cmd, shell=True, text=True)
         except CalledProcessError as e:
@@ -45,7 +45,7 @@ class Kind(Base):
     def action_add_after(self, context) -> None:
         target = context['targets'][0]
         name = target['name'].replace('[s] ', '').replace('[S] ', '').replace('[c] ', '').replace('"', '\\"')
-        cmd = 'osascript ../lib/add_track_to_after.applescript ' + name + '"'
+        cmd = 'osascript osascript ~/.cache/dein/repos/github.com/skrby1/unite-itunes/rplugin/python3/denite/lib/add_track_to_after.applescript "' + name + '"'
         try:
             run(cmd, shell=True, text=True)
         except CalledProcessError as e:
