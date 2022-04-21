@@ -31,6 +31,28 @@ class Kind(Base):
             self.error_message(context, err_msg)
         self.vim.command('redraw! | echo \'Play track "\' . "' + name + '" . \'"\'')
 
+    def action_add_next(self, context) -> None:
+        target = context['targets'][0]
+        name = target['name'].replace('[s] ', '').replace('[S] ', '').replace('[c] ', '').replace('"', '\\"')
+        cmd = 'osascript ../lib/add_track_to_next.applescript "' + name + '"'
+        try:
+            run(cmd, shell=True, text=True)
+        except CalledProcessError as e:
+            err_msg = e.stderr.splitlines()
+            self.error_message(context, err_msg)
+        self.vim.command('redraw! | echo \'Add next "\' . "' + name + '" . \'"\'')
+
+    def action_add_after(self, context) -> None:
+        target = context['targets'][0]
+        name = target['name'].replace('[s] ', '').replace('[S] ', '').replace('[c] ', '').replace('"', '\\"')
+        cmd = 'osascript ../lib/add_track_to_after.applescript ' + name + '"'
+        try:
+            run(cmd, shell=True, text=True)
+        except CalledProcessError as e:
+            err_msg = e.stderr.splitlines()
+            self.error_message(context, err_msg)
+        self.vim.command('redraw! | echo \'Add after "\' . "' + name + '" . \'"\'')
+
     def action_play_s(self, context) -> None:
         filepath = shlex.quote(os.path.normpath(os.path.join(os.path.dirname(__file__),
             '../lib/music3.applescript')))
